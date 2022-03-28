@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/*반응형 화면 크기*/
+/*반응형, 브라우저 크기가 767px 이하일때*/
+/*반응형, 브라우저 크기가 768이상, 1023px 이하일때*/
+/*반응형, 브라우저 크기가 1024px 이상일때*/
+.sc_intro { height: 100vh; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; font-family: "Montserrat", "Noto Sans KR", sans-serif; }
+
+.sc_intro .sc_title { font-size: 60px; text-align: center; line-height: 1.4; font-weight: 500; }
+
+.sc_intro .sc_title span { display: block; }
+
+.sc_intro .sc_title .desc { font-size: 15px; opacity: 0.7; }
+
+@media (max-width: 768px) { .sc_intro .sc_title { font-size: 30px; } }
+
+.sc_about { max-width: 700px; margin: 0 auto; padding: 0 20px; }
+
+.sc_about .sc_title { font-size: 38px; line-height: 1.8; font-weight: 300; }
+
+.sc_about .sc_title strong { font-weight: 600; }
+
+.sc_about .desc { margin: 100px 0; font-size: 18px; line-height: 1.7; }
+
+@media (max-width: 768px) { .sc_about .sc_title { font-size: 22px; }
+  .sc_about .desc { font-size: 16px; } }
+
+.sc_works .sc_title { font-size: 60px; font-family: "Montserrat", "Noto Sans KR", sans-serif; font-weight: 600; text-align: center; margin-bottom: 100px; }
+
+@media (max-width: 768px) { .sc_works .sc_title { font-size: 30px; margin-bottom: 50px; } }
+
+.sc_works .group_list { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; padding: 10px; }
+
+@media (max-width: 768px) { .sc_works .group_list { padding: 0; } }
+
+.sc_works .cont { -webkit-box-flex: 1; -ms-flex: 1 0 50%; flex: 1 0 50%; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 10px; }
+
+@media (max-width: 768px) { .sc_works .cont { -webkit-box-flex: 1; -ms-flex: 1 0 100%; flex: 1 0 100%; }
+  .sc_works .cont + .cont { padding-top: 0; } }
+
+.sc_works .cont.full { -webkit-box-flex: 1; -ms-flex: 1 0 100%; flex: 1 0 100%; }
+
+.sc_works .cont.full .wrap { padding-bottom: 50%; }
+
+@media (max-width: 768px) { .sc_works .cont.full .wrap { padding-bottom: 130%; } }
+
+.sc_works .cont .wrap { padding-bottom: 100%; position: relative; overflow: hidden; }
+
+@media (max-width: 768px) { .sc_works .cont .wrap { padding-bottom: 130%; } }
+
+.sc_works .cont .wrap:after { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.5); }
+
+.sc_works .cont .link_wrap { position: absolute; top: 50%; z-index: 1; -webkit-transform: translateY(-50%); transform: translateY(-50%); width: 100%; text-align: center; }
+
+.sc_works .cont .link_wrap em { color: #f1f1f1; font-size: 12px; margin-bottom: 10px; display: block; }
+
+.sc_works .cont .link_wrap h3 { font-size: 50px; margin-bottom: 30px; font-weight: 500; }
+
+@media (max-width: 768px) { .sc_works .cont .link_wrap h3 { font-size: 30px; } }
+
+.sc_works .cont .link_wrap .hash_wrap { margin-bottom: 20px; color: #b9b9b9; font-size: 14px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -ms-flex-wrap: wrap; flex-wrap: wrap; max-width: 500px; padding: 0 20px; text-align: center; margin: 0 auto; }
+
+.sc_works .cont .link_wrap .hash_wrap span { background: rgba(0, 0, 0, 0.3); color: #fff; display: inline-block; padding: 7px 14px 9px; border-radius: 17px; margin: 0 5px 5px; -webkit-backdrop-filter: blur(11px); backdrop-filter: blur(11px); }
+
+@media (max-width: 768px) { .sc_works .cont .link_wrap .hash_wrap { font-size: 10px; }
+  .sc_works .cont .link_wrap .hash_wrap span { margin: 0 2px 5px; } }
+
+.sc_works .cont .link_wrap .links { padding: 10px; }
+
+.sc_works .cont .link_wrap .links a { border: 1px solid #fff; padding: 8px 10px; border-radius: 3px; font-size: 14px; display: inline-block; -webkit-transition: .3s; transition: .3s; }
+
+.sc_works .cont .link_wrap .links a:hover { background: #fff; color: #222; }
+
+@media (max-width: 768px) { .sc_works .cont .link_wrap .links a { width: 100%; -webkit-box-sizing: border-box; box-sizing: border-box; }
+  .sc_works .cont .link_wrap .links a + a { margin-top: 10px; } }
+
+.sc_works .cont img { width: 100%; height: 140%; -o-object-fit: cover; object-fit: cover; position: absolute; bottom: 0; left: 0; }

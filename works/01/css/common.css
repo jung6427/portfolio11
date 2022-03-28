@@ -1,0 +1,27 @@
+.blind {
+    position: absolute;
+    width: 1px; height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+} 
+
+.slide_content .icon {
+    background: url(../images/icon_main_2019.png) no-repeat 0 0;
+} 
+.sc_service ul li .ico_service {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 10px;
+    background-image: url(../images/icon_set_service_2021.png?ver=210526);
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+.sc_video .sns ul li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../images/seoul_sns.png) no-repeat;
+    text-indent: -9999em;
+}       

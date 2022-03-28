@@ -1,0 +1,182 @@
+@import './_variables.scss';
+.sc_intro{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $font-en;
+   
+    .sc_title{
+        font-size: 60px;
+        text-align: center;
+        line-height: 1.4;
+        font-weight: 500;
+        span{display: block;}
+        .desc{
+            font-size: 15px;
+            opacity: 0.7;
+        }
+
+        @include mobile{
+            font-size: 30px;
+        }
+
+    }
+}
+
+.sc_about{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px;
+    .sc_title{
+        font-size: 38px;
+        line-height: 1.8;
+        font-weight: 300;
+        strong{font-weight: 600;}
+    }
+
+    .desc{
+        margin: 100px 0;
+        font-size: 18px;
+        line-height: 1.7;
+    }
+    @include mobile{
+        .sc_title{
+            font-size: 22px;
+        }
+        .desc{
+            font-size: 16px;
+        }
+    }
+
+    
+}
+
+.sc_works{
+    .sc_title{
+        font-size: 60px;
+        font-family: $font-en;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 100px;
+        @include mobile{
+            font-size: 30px;
+            margin-bottom: 50px;
+        }
+    }
+    .group_list{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        @include mobile{
+           padding: 0;
+        }
+    }
+    .cont{
+        flex: 1 0 50%;
+        box-sizing: border-box;
+        padding: 10px;
+
+        @include mobile{
+            flex: 1 0 100%;
+            &+.cont{padding-top: 0;}
+        }
+      
+
+        &.full{
+            flex: 1 0 100%;
+            .wrap{
+                padding-bottom: 50%;
+                @include mobile{
+                    padding-bottom: 130%;
+                }
+                
+            }
+        }
+        .wrap{
+            padding-bottom: 100%;position: relative;
+            overflow: hidden;
+            // border-radius: 10px;
+            @include mobile{
+                padding-bottom: 130%;
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;left: 0;right: 0;bottom: 0;
+                background: rgba(0,0,0,0.5);
+            }
+
+
+        }
+        .link_wrap{
+            position: absolute;
+            top: 50%;
+            z-index: 1;
+            transform: translateY(-50%);
+            width: 100%;
+            text-align: center;
+            em{color: #f1f1f1;font-size: 12px;margin-bottom: 10px;
+            display: block;}
+            h3{font-size: 50px;margin-bottom: 30px;
+                font-weight: 500;
+                @include mobile{
+                    font-size: 30px;
+                }
+            }
+            .hash_wrap{
+                margin-bottom: 20px;
+                color: #b9b9b9;
+                font-size: 14px;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                max-width: 500px;
+                padding: 0 20px;
+                text-align: center;
+                margin: 0 auto;
+                span{
+                    background: rgba(0,0,0,0.3);
+                    color: #fff;
+                    display: inline-block;
+                    padding: 7px 14px 9px;
+                    border-radius: 17px;
+                    margin: 0 5px 5px;
+                    backdrop-filter: blur(11px);
+                    
+                }
+                @include mobile{
+                    font-size: 10px;
+                    span{
+                        margin: 0 2px 5px;
+                    }
+                }
+            }
+
+            .links{
+                padding: 10px;
+                a{
+                    border: 1px solid #fff;
+                    padding: 8px 10px;
+                    border-radius: 3px;
+                    font-size: 14px;
+                    display: inline-block;
+                    transition: .3s;
+                    &:hover{
+                        background: #fff;
+                        color: #222;
+                    }
+                    @include mobile{
+                        width: 100%;
+                        box-sizing: border-box;
+                       &+a{margin-top: 10px;}
+                    }
+                }
+            }
+        }
+        img{width: 100%;height: 140%;object-fit: cover;
+            position: absolute;bottom: 0;left: 0;
+        }
+    }
+}
