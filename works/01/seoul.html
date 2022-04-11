@@ -24,6 +24,7 @@
 <body>
     
     <header>
+        <div class="bg"></div>
         <div class="inner">
             <div class="header_top">
                 <div class="logo_area"> <!-- 왼쪽 -->
@@ -147,14 +148,9 @@
                                 <div class="btn prev">
                                     <a href=""><span class="blind">이전</span> </a>  
                                 </div>
-
-                                <a href="" class="s_btn s_play">
+                                <a href="" class="s_btn pause">
                                     <span class="blind">재생, 일시정지</span>
                                 </a>
-                                <!-- <div class="hi_play">
-                                    <a href="" class="start"><span class="blind">재생</span> </a>
-                                    <a href="" class="stop on"><span class="blind">정지</span> </a>
-                                </div> -->
                                 <div class="btn next">
                                     <a href=""><span class="blind">다음</span></a>  
                                 </div>
@@ -269,7 +265,7 @@
                                 <div class="btn prev">
                                     <a href=""><span class="blind">이전</span> </a>  
                                 </div>
-                                <a href="" class="s_btn s_play">
+                                <a href="" class="s_btn pause">
                                     <span class="blind">재생, 일시정지</span>
                                 </a>
                                 <div class="btn next">
@@ -285,44 +281,70 @@
                             <div class="input_lists">
                                 <h3><span class="blind">코로나19현황</span> </h3>
                                 <span class="result0">2022.02.13.00시 기준</span>
-                                <span class="blind">확진자</span>
-                                <span class="result1">386,358</span>
-                                <span class="blind">신규확진자</span>
-                                <span class="result2">11,824</span>
+                                
+                                <span class="result1">
+                                    <span class="blind">확진자</span>
+                                    386,358
+                                </span>
+                                
+                                <span class="result2">
+                                    <span class="blind">신규확진자</span>
+                                    11,824
+                                </span>
                             </div>
                             <div class="input_lists vaccine-list">
                                 <h3><span class="blind">예방접종현황</span> </h3>
                                 <span class="result3">2022.02.13.00시 기준</span>
+                                
+                                <span class="result41">
+                                    <span class="blind">대상자 1차</span>
+                                    1차
+                                </span>
+                                
+                                <span class="result42">
+                                    <span class="blind">접종자</span>
+                                    8,276,966
+                                </span>
 
-                                <span class="blind">대상자 1차</span>
-                                <span class="result41">1차</span>
+                                <span class="result43">
+                                    <span class="blind">1차 접종률</span>
+                                    88,0%
+                                </span>
 
-                                <span class="blind">접종자</span>
-                                <span class="result42">8,276,966</span>
+                                <span class="result51">
+                                    <span class="blind">대상자 인원</span>
+                                    9,401,888
+                                </span>
+                                
+                                <span class="result52">
+                                    <span class="blind">대상자 2차</span>
+                                    2차
+                                </span>
+                                
+                                <span class="result53">
+                                    <span class="blind">접종자</span>
+                                    8,186,815
+                                </span>
+                                
+                                <span class="result54">
+                                    <span class="blind">2차 접종률</span>
+                                    87.1%
+                                </span>
+                                
+                                <span class="result61">
+                                    <span class="blind">대상자 3차</span>
+                                    3차
+                                </span>
+                                
+                                <span class="result62">
+                                    <span class="blind">3차 접종자</span>
+                                    5,308,110
+                                </span>
 
-                                <span class="blind">1차 접종률</span>
-                                <span class="result43">88,0%</span>
-
-                                <span class="blind">대상자 인원</span>
-                                <span class="result51">9,401,888</span>
-
-                                <span class="blind">대상자 2차</span>
-                                <span class="result52">2차</span>
-
-                                <span class="blind">접종자</span>
-                                <span class="result53">8,186,815</span>
-
-                                <span class="blind">2차 접종률</span>
-                                <span class="result54">87.1%</span>
-
-                                <span class="blind">대상자 3차</span>
-                                <span class="result61">3차</span>
-
-                                <span class="blind">3차 접종자</span>
-                                <span class="result62">5,308,110</span>
-
-                                <span class="blind">3차 접종률</span>
-                                <span class="result63">56.5%</span>
+                                <span class="result63">
+                                    <span class="blind">3차 접종률</span>
+                                    56.5%
+                                </span>
                             </div>
                         </figure>    
                     </a>
@@ -334,11 +356,7 @@
             </div>
 
             <div class="sc_service">
-                <div class="title_group">
-                    <h2>주요 서비스</h2>
-
-                    <a href="">전체사이트</a>
-                </div>
+                <h2>주요 서비스</h2>
 
                 <ul>
                     <li class="public"><a href="" ><i class="ico_service"></i> 공공서비스예약</a></li>
@@ -353,6 +371,8 @@
                     <li class="ebook"><a href="" ><i class="ico_service"></i> 전자책/매뉴얼</a></li>
                     <li class="council"><a href="" ><i class="ico_service"></i> 시의회</a></li>
                 </ul>
+
+                <a href="" class="all_site">전체사이트</a>
             </div>
         </div> <!-- inner -->
 
@@ -370,11 +390,7 @@
         <div class="inner">
             <div class="sc_board">
                 <div class="event board">
-                    <div class="title_group">
-                        <h2>이벤트 신청</h2>
-    
-                        <a href=""><span class="blind">더보기</span> </a>
-                    </div>
+                    <h2>이벤트 신청</h2>
 
                     <ul>
                         <li>
@@ -398,14 +414,12 @@
                             <a href=""><p>공기정화 식물로 사무실, 교실을 카페처럼</p></a>
                         </li>
                     </ul>
+
+                    <a href="" class="all_site"><span class="blind">더보기</span> </a>
                 </div> <!-- event -->
 
                 <div class="festival board">
-                    <div class="title_group">
-                        <h2>이달의 행사 및 축제</h2>
-    
-                        <a href=""><span class="blind">더보기</span></a>
-                    </div>
+                    <h2>이달의 행사 및 축제</h2>
 
                     <ul>
                         <li>
@@ -429,12 +443,12 @@
                             <a href=""><p>서울대공원, 2022 임인년 `책마루에 범(흑호) 내려온다` 교육 프로그램 진행</p></a>
                         </li>
                     </ul>
+
+                    <a href="" class="all_site"><span class="blind">더보기</span></a>
                 </div> <!-- festival-->
 
                 <div class="often">
-                    <div class="title_group">
-                        <h2>자주 찾은 서비스</h2>
-                    </div>
+                    <h2>자주 찾은 서비스</h2>
 
                     <div class="wrap">
                         <ul>
@@ -471,11 +485,7 @@
             </div> <!-- sc_info -->
 
             <div class="news_area">
-                <div class="title_group">
-                    <h2>새소식</h2>
-
-                    <a href="">전체보기</a>
-                </div>
+                <h2>새소식</h2>
 
                 <ul>
                     <li>
@@ -545,6 +555,8 @@
                         <a href=""><img src="images/SPC_20210521131556_51482.jpg" alt="코로나19 서울시 생활정보"></a>
                     </li>
                 </ul>
+
+                <a href="" class="all_site">전체보기</a>
             </div> <!-- news_area -->
 
             <div class="sc_video">
@@ -553,10 +565,12 @@
                         <h2>서울영상</h2>
                     </div>
                     <div class="video_box">
-                        <div class="img">
-                            <img src="images/USFUL_20211221105412_55622.jpg" alt="EP최종화. 남겨진 이들의 서울 생활은 계속된다 | 웹드라마 일인분하우스 (Cast. 이유진 X 정민규 X 이정준 X 진소연 X 최희승)">
-                        </div>
-                        <p class="txt">최종화. 남겨진 이들의 서울 생활은 계속된다 | 웹드라마 일인분하우스 (Cast. 이유진 X 정민규 X 이정준 X 진소연 X 최희승)</p>
+                        <a href="">
+                            <div class="img">
+                                <img src="images/USFUL_20211221105412_55622.jpg" alt="EP최종화. 남겨진 이들의 서울 생활은 계속된다 | 웹드라마 일인분하우스 (Cast. 이유진 X 정민규 X 이정준 X 진소연 X 최희승)">
+                            </div>
+                            <p class="txt">최종화. 남겨진 이들의 서울 생활은 계속된다 | 웹드라마 일인분하우스 (Cast. 이유진 X 정민규 X 이정준 X 진소연 X 최희승)</p>
+                        </a>
                     </div>
                 </div>
 
@@ -567,28 +581,21 @@
 
                     <ul>
                         <li>
-                            <a href="">
-                                <span>고시공고</span>
-                                <p>종합공사시공 건설업 등록 공고(서울특별시 공고 제2022-434호)</p>
-                            </a>
+                            <a href=""><span>고시공고</span></a> 
+                            <a href=""><p>종합공사시공 건설업 등록 공고(서울특별시 공고 제2022-434호)</p></a>
                         </li>
                         <li>
-                            <a href="">
-                                <span>입찰공고</span>
-                                <p>(입찰공고) 2022년 남부순환로 장기사용 송배수관 정비공사 ‘부단수 차단’ 공법선정심사 공법 제안서 제출 (마감기한 : 2. 21. (월) 18:00까지)</p>
-                            </a>
+                            <a href=""><span>입찰공고</span></a> 
+                            <a href=""><p>(입찰공고) 2022년 남부순환로 장기사용 송배수관 정비공사 ‘부단수 차단’ 공법선정심사 공법 제안서 제출 (마감기한 : 2. 21. (월) 18:00까지)</p></a>    
                         </li>
                         <li>
-                            <a href="">
-                                <span>채용시험</span>
-                                <p>2021년 제6회 서울특별시 지방의무직공무원 경력경쟁임용 면접시험 결과 공고</p>
-                            </a>
+                            <a href=""><span>채용시험</span></a>
+                            <a href=""><p>2021년 제6회 서울특별시 지방의무직공무원 경력경쟁임용 면접시험 결과 공고</p></a>   
+                            
                         </li>
                         <li>
-                            <a href="">
-                                <span>보도자료</span>
-                                <p>(석간) 서울소방, 지난해 인명구조 과정에서 발생한 차량파손 등 총 47건 보상</p>
-                            </a>
+                            <a href=""><span>보도자료</span></a>
+                            <a href=""><p>(석간) 서울소방, 지난해 인명구조 과정에서 발생한 차량파손 등 총 47건 보상</p></a>
                         </li>
                     </ul>
                 </div> <!-- seoul_news -->
@@ -598,22 +605,23 @@
                         <div class="title_group">
                             <h2>서울시 SNS</h2>
                         </div>
-                    </a>
 
-                    <ul> <!-- 앱솔루트로 중앙 정렬 (위에 a태그 안에 들어갈수있게) -->
-                        <li><a href="" class="instar"><span class="blind">instar</span>  </a></li>
-                        <li><a href="" class="facebook"><span class="blind">facebook</span>  </a></li>
-                        <li><a href="" class="twitter"><span class="blind">twitter</span>  </a></li>
-                        <li><a href="" class="blog"><span class="blind">blog</span>  </a></li>
-                        <li><a href="" class="youtebe"><span class="blind">youtebe</span>  </a></li>
-                        <li><a href="" class="kakao"><span class="blind">kakao</span>  </a></li>
-                    </ul>
-       
+                        <ul> <!-- 앱솔루트로 중앙 정렬 (위에 a태그 안에 들어갈수있게) -->
+                            <li><a href="" class="instar"><span class="blind">instar</span>  </a></li>
+                            <li><a href="" class="facebook"><span class="blind">facebook</span>  </a></li>
+                            <li><a href="" class="twitter"><span class="blind">twitter</span>  </a></li>
+                            <li><a href="" class="blog"><span class="blind">blog</span>  </a></li>
+                            <li><a href="" class="youtebe"><span class="blind">youtebe</span>  </a></li>
+                            <li><a href="" class="kakao"><span class="blind">kakao</span>  </a></li>
+                        </ul>
+                    </a>
                 </div>
             </div>
 
             <div class="sc_banner">
-                <img src="images/SBTM_20211214150359_77589.jpg" alt="스토리인 서울 서울 건축 산책">
+                <a href="">
+                    <img src="images/SBTM_20211214150359_77589.jpg" alt="스토리인 서울 서울 건축 산책">
+                </a>
             </div>
 
             <div class="main_banner">
@@ -687,7 +695,7 @@
                     <div class="btn prev">
                         <a href=""><span class="blind">이전</span> </a>  
                     </div>
-                    <a href="" class="s_btn s_play">
+                    <a href="" class="s_btn pause">
                         <span class="blind">재생, 일시정지</span>
                     </a>
                     <div class="btn next">
@@ -823,7 +831,7 @@
 
                     <div class="address">
                         <address>
-                            서울특별시청 04524 서울특별시 중구 세종대로 110 [찾아오시는 길]
+                            서울특별시청 04524 서울특별시 중구 세종대로 110 <a href="">[찾아오시는 길]</a>
                             <br>
                             대표전화 : 02-120 또는 02-731-2120
                         </address>

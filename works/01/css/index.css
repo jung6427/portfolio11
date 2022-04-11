@@ -99,7 +99,6 @@
 .hi_control .s_btn {
     float: left;
     margin-top: 3px;
-    
 }
 .hi_control .s_btn{
     width: 13px; height: 13px;
@@ -107,18 +106,9 @@
     position: absolute;
     right: 25px;
 }
-.hi_control .s_play {background-position: -285px -285px;}  /* 재생되는 상태   */
-.hi_control .s_play.pause {background-position: -269px -285px;} /* 정지가 된 상태 */
-/* .hi_control .hi_play a:first-child {
-    background-position: -269px -285px;
-}
-.hi_control .hi_play a:last-child {
-    background-position: -285px -285px;
-} */
-/* .hi_control .hi_play .start {display: none;}
-.hi_control .hi_play .start.on {display: block;}
-.hi_control .hi_play .stop {display: none;}
-.hi_control .hi_play .stop.on {display: block;} */
+.hi_control .pause {background-position: -285px -285px;}  /* 재생되는 상태   */
+.hi_control .s_play{background-position: -269px -285px;} /* 정지가 된 상태 */
+
 /* 2번째 */
 .slide_content2 h3 {
     top: 50%;
@@ -255,32 +245,17 @@
     height: 130px;
 }
 /* .sc_service */
-.sc_service {
-    margin-top: 60px;
+.sc_service {margin-top: 60px; position: relative;
 }
-.sc_service .title_group {
-    border-bottom: 1px solid #dbdbdb;
-    overflow: hidden;
-    height: 40px;
-    margin-bottom: 10px;
-
+.sc_service h2 {font-size: 24px; font-weight: 700;
+    border-bottom: 1px solid #dbdbdb;  line-height: 1.35em;
+    margin-bottom: 20px; display: block; padding-bottom: 10px;
 }
-.sc_service .title_group h2 {
-    font-size: 24px;
-    float: left;
-    font-weight: 700;
-}
-.sc_service .title_group a {
-    float: right;
-    display: block;
-    border: 1px solid #ccc;
-    width: 110px;
-    height: 25px;
-    line-height: 25px;
+.sc_service .all_site {border: 1px solid #ccc; width: 110px;
+    height: 25px; line-height: 25px;
     background: url(../images/icon_link6.png) no-repeat right 13px top 50%;
-    text-align: center;
-    padding-right: 10px;
-    font-size: 15px;
+    text-align: center; padding-right: 10px; font-size: 15px;
+    display: inline-block; position: absolute; right: 0; top: 0;
 }
 .sc_service ul {
     overflow: hidden;
@@ -288,12 +263,10 @@
     width: 100%;
     margin: 0 auto;
 }
-.sc_service ul li {
-    width: auto;
-    height: 90px;
-    display: table-cell;
+.sc_service ul li {width: auto; height: 90px; display: table-cell;
     text-align: center;
 }
+.sc_service ul li a {display: block; width: 100%; height: 100%;}
 .sc_service ul .public .ico_service{background-position: -360px 0;}
 .sc_service ul .job .ico_service{background-position: -120px 0;}
 .sc_service ul .realestate .ico_service{background-position: -300px 0;}
@@ -307,10 +280,7 @@
 /* .sc_service */
 
 /* banner */
-.banner {
-    background: #eff4f8;
-    margin-top: 20px;
-    padding: 20px 0;
+.banner {background: #eff4f8; margin-top: 35px; padding: 20px 0;
     margin-bottom: 60px;
 }
 .banner .inner .corona {
@@ -335,18 +305,16 @@
     padding-bottom: 50px;
     border-bottom: 2px solid #000;
 }
+.sc_board .board {position: relative;}
 .sc_board .board ul {
     margin-top: 16px;
 }
-.sc_board .board ul li{
-    overflow: hidden;
-    margin-bottom: 16px;
+.sc_board .board ul li{padding: 6px 0 6px 0; position: relative;
+    width: 100%;  overflow: hidden;
     
 }
 .sc_board .board ul li em{
-    float: left;
-    
-    margin-right: 10px;
+    float: left; font-size: 15px; line-height: 1.35em; margin-right: 10px;
 }
 .sc_board .board ul li em.environment {
     color: #599100;
@@ -363,31 +331,18 @@
 .sc_board .board ul li em.go {
     color: #028ab6;
 }
-.sc_board .board ul li p {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
+.sc_board .board ul li p {display: -webkit-box; -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical; overflow: hidden;
+    font-size: 15px; line-height: 1.35em;
 }
-.sc_board .board .title_group {
-    overflow: hidden;
-    margin: 10px 0;
-    padding-bottom: 5px;
-    border-bottom: 2px solid #dbdbdb;
+.sc_board .board h2 {font-size: 24px; font-weight: 700;
+    margin: 10px 0; padding-bottom: 5px; border-bottom: 2px solid #dbdbdb;
+    line-height: 1.35em;
 }
-.sc_board .board .title_group h2 {
-    float: left;
-    font-size: 24px;
-    font-weight: 700;
-}
-.sc_board .board .title_group a {
-    float: right;
-    top: 6px;
-    width: 22px;
-    height: 20px;
-    border: 1px solid #ddd;
+.sc_board .board .all_site {position: absolute; top: 15px; right: 0;
+    width: 22px; height: 20px; border: 1px solid #ddd;
     background: url(../images/icon_set_common.png) no-repeat -1px -1px;
 }
-
 .sc_board .event {
     float: left;
     width: 360px;
@@ -406,9 +361,7 @@
     width: 360px;
     float: left;
 }
-.often .title_group {
-    font-size: 24px;
-    margin: 10px 0;
+.often h2 {font-weight: 700; font-size: 24px; margin: 10px 0; 
     padding-bottom: 5px;
 }
 .often .wrap ul {
@@ -439,18 +392,10 @@
     padding-bottom: 5px;
     font-weight: 600;
 }
-.sc_info ul {
-    overflow: hidden;
-    
-}
-.sc_info ul li{
-    float: left;
-    width: calc(100% / 8);
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 150px;
-    text-align: center;
-    background-repeat: no-repeat;
+.sc_info ul {overflow: hidden;}
+.sc_info ul li{float: left; width: calc(100% / 8);
+    background-repeat: no-repeat; background-position: center;
+    height: 145px;text-align: center;
 }
 .sc_info ul .home {background-image: url(../images/icon_house.png);}
 .sc_info ul .economy {background-image: url(../images/icon_economy.png);}
@@ -465,25 +410,14 @@
     padding-top: 130px;
 }
 /* news_area */
-.news_area {
-    margin-top: 40px;
-}
-.news_area .title_group {
-    overflow: hidden;
-    margin-bottom: 20px;
-}
-.news_area .title_group h2 {
-    font-size: 24px;
-    margin: 10px 0;
-    padding-bottom: 5px;
+.news_area {margin-top: 40px; position: relative;}
+.news_area h2 {font-size: 24px; margin: 10px 0 20px 0; padding-bottom: 5px;
     font-weight: 600;
-    float: left;
 }
-.news_area .title_group a {
-    float: right;
-    width: 75px;
-    margin-top: 20px;
+.news_area .all_site {display: inline-block; width: 75px; margin-top: 20px;
     background: url(../images/icon_set_common.png) no-repeat 0 -259px;
+    position: absolute; right: 0; top: -7px; font-size: 15px; 
+    color: #7d7d7d; vertical-align: middle;
 }
 .news_area ul {
     overflow: hidden;
@@ -494,6 +428,7 @@
     margin-right: 20px;
     position: relative;
 }
+.news_area ul li a {width: 100%; height: 100%; display: block;}
 .news_area ul li:nth-child(4n) {
     margin-right: 0;
 }
@@ -630,24 +565,18 @@
     background-repeat: no-repeat;
     height: 194px;
     margin-top: 15px;
-    padding: 10px 15px;
     box-sizing: border-box;
     position: relative;
-
 }
-.sc_video .sns .title_group {
-    font-size: 24px;
-    padding-bottom: 5px;
-    font-weight: 600;
-    font-size: 22px;
-    margin-top: 3px;
+.sc_video .sns > a {width: 100%; height: 100%; display: block;}
+.sc_video .sns .title_group {padding: 10px 15px 5px; font-size: 24px;
+    font-weight: 600; font-size: 22px; margin-top: 3px;
 }
-
 .sc_video .sns h2::after {
     background: url(../images/seoul_sns.png) no-repeat -247px 0;
     content: '';
     position: absolute;
-    top: 10px;
+    top: 13px;
     right: 180px;
     display: inline-block;
     width: 34px;
@@ -689,8 +618,6 @@
 .main_banner .hi_control {color: #000; bottom: 0;  }
 .main_banner .hi_control .hi_pagers { font-size: 14px; margin-top: 3px;
 }
-.main_banner .hi_control .swiper-pagination-current {
-}
 .main_banner .hi_control .prev {
     background: url(../images/icon_set_common.png) no-repeat -45px -43px;
     width: 20px;
@@ -703,8 +630,8 @@
     display: inline-block; border: 1px solid #999; 
     box-sizing: border-box;  margin-top: 0; margin-right: -1px;
 }
-.main_banner .hi_control .s_play {background-position: -65px -43px;}  /* 재생되는 상태   */
-.main_banner .hi_control .s_play.pause {background-position: -65px -43px;} /* 정지가 된 상태 */
+.main_banner .hi_control .s_play {background-position: -101px -43px;} /* 재생되는 상태 */
+.main_banner .hi_control .pause {background-position: -65px -43px;} /* 정지가 되는 상태 */
 .main_banner .hi_control .next {
     background: url(../images/icon_set_common.png) no-repeat -86px -43px;
     width: 20px;
@@ -713,11 +640,11 @@
 }
 /* .sc_engine */
 .sc_engine {
-    margin: 80px 0 50px;
+    margin: 80px 0 50px; 
 }
 
 .engine {
-    position: relative; border: 1px solid #d0d0d0;
+    position: relative; border: 1px solid #d0d0d0; z-index: 2;
 }
 .engine::after {
     content: '';
