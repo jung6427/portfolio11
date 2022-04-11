@@ -1,0 +1,619 @@
+@import 'reset.css';
+@import 'common.css';
+
+/* font-family: 'Roboto', sans-serif; */
+@font-face {
+    font-family: 'Roboto';
+    src: url('../font/Roboto/RobotoL.ttf') format('truetype'),
+         url('../font/Roboto/RobotoL.woff') format('woff'),
+         url('../font/Roboto/RobotoL.eot'),
+         url('../font/Roboto/RobotoB.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'Roboto';
+    src: url('../font/Roboto/RobotoR.ttf') format('truetype'),
+         url('../font/Roboto/RobotoR.woff') format('woff'),
+         url('../font/Roboto/RobotoR.eot'),
+         url('../font/Roboto/RobotoR.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'Roboto';
+    src: url('../font/Roboto/RobotoM.ttf') format('truetype'),
+         url('../font/Roboto/RobotoM.woff') format('woff'),
+         url('../font/Roboto/RobotoM.eot'),
+         url('../font/Roboto/RobotoM.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'Roboto';
+    src: url('../font/Roboto/RobotoB.ttf') format('truetype'),
+         url('../font/Roboto/RobotoB.woff') format('woff'),
+         url('../font/Roboto/RobotoB.eot'),
+         url('../font/Roboto/RobotoB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: bold;
+  }
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'noto', sans-serif; */
+@font-face {
+    font-family: 'noto';
+    src: url('../font/noto/NotoL.ttf') format('truetype'),
+         url('../font/noto/NotoL.woff') format('woff'),
+         url('../font/noto/NotoL.eot'),
+         url('../font/noto/NotoL.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'noto';
+    src: url('../font/noto/NotoR.ttf') format('truetype'),
+         url('../font/noto/NotoR.woff') format('woff'),
+         url('../font/noto/NotoR.eot'),
+         url('../font/noto/NotoR.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'noto';
+    src: url('../font/noto/NotoM.ttf') format('truetype'),
+        url('../font/noto/NotoM.woff') format('woff'),
+        url('../font/noto/NotoM.eot'),
+        url('../font/noto/NotoM.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'noto';
+    src: url('../font/noto/NotoB.ttf') format('truetype'),
+        url('../font/noto/NotoB.woff') format('woff'),
+        url('../font/noto/NotoB.eot'),
+        url('../font/noto/NotoB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: bold;
+}
+/* ///// font-family: 'noto', sans-serif; */
+/* font-family: 'poppins', sans-serif; */
+@font-face {
+    font-family: 'poppins';
+    src: url('../font/poppins/PoppinsL.ttf') format('truetype'),
+         url('../font/poppins/PoppinsL.woff') format('woff'),
+         url('../font/poppins/PoppinsL.eot'),
+         url('../font/poppins/PoppinsL.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'poppins';
+    src: url('../font/poppins/PoppinsR.ttf') format('truetype'),
+         url('../font/poppins/PoppinsR.woff') format('woff'),
+         url('../font/poppins/PoppinsR.eot'),
+         url('../font/poppins/PoppinsR.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'poppins';
+    src: url('../font/poppins/PoppinsM.ttf') format('truetype'),
+         url('../font/poppins/PoppinsM.woff') format('woff'),
+         url('../font/poppins/PoppinsM.eot'),
+         url('../font/poppins/PoppinsM.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'poppins';
+    src: url('../font/poppins/PoppinsSB.ttf') format('truetype'),
+        url('../font/poppins/PoppinsSB.woff') format('woff'),
+        url('../font/poppins/PoppinsSB.eot'),
+        url('../font/poppins/PoppinsSB.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'poppins';
+    src: url('../font/poppins/PoppinsB.ttf') format('truetype'),
+        url('../font/poppins/PoppinsB.woff') format('woff'),
+        url('../font/poppins/PoppinsB.eot'),
+        url('../font/poppins/PoppinsB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: bold;
+}
+/* ///////////// font-family: 'poppins', sans-serif; */
+
+body {
+    font-family: 'Roboto','noto', sans-serif;
+    /* min-width: 1420px; */
+    /* min-width 를 넣어야 크기를 줄여도 레이아웃이 깨지지 않음 */
+    padding-top: 80px;
+}
+body.on {overflow: hidden;}
+header {
+    position: fixed;  
+    /* position: absolute; 기능을 픽스드가 대신해주면서 고정도 시켜줌 */ 
+    z-index: 16; 
+    top: 0; left: 0;
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    /* min-width 를 넣어야 크기를 줄여도 레이아웃이 깨지지 않음 헤더는 픽스라서 여기에도 min-width 줘야함 */
+} 
+/* header .menu_area */
+header .menu_area h1 {
+    background-image: url(../images/logo.svg);
+    width: 140px; height: 32px;
+    position: absolute;
+    top: 50%; left: 30px;
+    transform: translateY(-50%);
+    display: inline-block;
+}
+header .menu_area .menu {
+    line-height: 79px;
+    padding-left: 230px;
+    position: relative;
+    border-bottom: 1px solid #eaedf3;
+}
+header .menu_area .menu::after {
+    content: '';
+    clear: both;
+    display: block;
+} 
+header .menu_area nav .menu > li {
+    color: rgba(13,42,88,.6);
+    font-size: 18px;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    float: left;
+    text-align: center;
+    margin: 0 40px;
+}
+header .menu_area nav .menu > li > a {
+    display: block;
+}
+header .menu_area nav .menu > li > .dept1.on{
+    color: #0d2a58;
+}
+header .menu_area nav .menu > li > a:hover{
+    color: #0d2a58;
+}  
+
+
+
+
+
+/* 메뉴의 서브 */
+header .sub {
+    position: absolute; 
+    top: 80px;
+    left: 0; right: 0;
+    width: 100%;
+    background: #fbfcfd;
+    box-sizing: border-box;
+    z-index: 10;
+    line-height: 57px;
+    border-bottom: 1px solid #eaedf3;
+    display: none;
+    padding: 16px 100px 20px 502px;
+    font-size: 16px;
+}
+header .sub h3{
+    position: absolute;
+    left: 286px;
+    padding-top: 18px;
+    color: #0d2a58;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+}
+header .sub .dept2 > li{display: flex; font-family: 'noto', sans-serif;}
+header .sub .dept2 > li > a{
+    color: #4d564d;
+    flex-shrink: 0;
+    width: 200px;
+    text-align: left;
+    letter-spacing: 0px;
+}
+
+header .sub .dept3{display: flex; flex-wrap: wrap; font-family: 'noto', sans-serif; letter-spacing: 0px;}
+header .sub .dept3 li{width: 200px; text-align: left; letter-spacing: 0px;}
+header .sub .dept3 li:hover{color: #0d2a58;}
+
+
+
+
+header .sub > li {
+    float: left;
+    padding: 20px 0;
+    font-weight: 400;
+    font-size: 16px;
+    white-space: nowrap;
+    margin-left: 100.5px;
+    letter-spacing: -0.1px;
+    font-family: 'noto', sans-serif;
+    line-height: 58px;
+    box-sizing: border-box;
+} 
+header .sub > li:first-child {
+    margin-left: 0;
+} 
+header .sub .bold {
+    color: #0d2a58;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 286px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1.2px;
+    margin-right: 20.5px;
+    line-height: 57px;
+} 
+
+/* 오른 쪽의 .menu_area .login_area */
+header .login_area {
+    position: absolute;
+    top: 50%; right: 22px;
+    transform: translateY(-50%);
+    line-height: 36px;
+    z-index: 13;
+}
+header .login_area > ul::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+header .login_area > ul {
+    position: relative;
+}
+header .login_area > ul > li {
+    float: left;
+    text-align: center;
+    font-weight: 500;
+}
+header .login_area > ul > li > a {
+    display: block;
+}
+header .login_area ul li:first-child {
+    margin-right: 32px;
+}
+header .login_area ul li .bar {
+    width: 1px; height: 16px;
+    background: #c7ced9;
+    position: absolute;
+    top: 50%; right: 171px;
+    transform: translateY(-50%);
+}
+header .login_area ul li img { 
+    vertical-align: middle;    
+    margin-bottom: 1px;
+    /* 이미지에다가 버티컬 얼라인 미들줘야된다.... */
+}
+header .login_area ul li .short{
+    width: 36px; height: 36px;
+    display: block;
+    margin-left: 22px;
+}
+/* z-인덱스는 부모한테 줘야 된다 ! */
+ header .login_area ul li .short:hover {
+    background-color: #f4f6fa;
+    border-radius: 15px;
+} 
+header .login_area ul li .language{
+    width: 36px; height: 36px;
+    display: block;
+    margin-left: 8px;
+}
+header .login_area ul li .language:hover {
+    background-color: #f4f6fa;
+    border-radius: 15px;
+} 
+header .login_area .do1024 {display: none;}
+/* 로긴의 서브  */
+header .login_area .sub1 {
+    display: none;
+    position: absolute;
+    right: 0;
+    border: 1px solid #d0d0d0;
+    box-sizing: border-box;
+    z-index: 11;
+    font-size: 14px;
+    top: calc(100% + 5px);
+    min-width: 90px;
+    padding: 8px 0 4px;
+    font-family: 'noto', sans-serif;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px -2px rgb(9 30 66 / 25%), 0 0 1px 0 rgb(9 30 66 / 31%);
+}
+header .login_area .sub1 li {
+    text-align: left;
+    padding: 0 17px 0 12px;
+    color: #0b1f48;
+}
+header .login_area .sub1 li:first-child{
+    margin-right: 0;
+}
+header .login_area .sub1 li:hover {
+    background-color: #f4f6fa;
+}
+header .login_area .go {
+    right: 53px;
+}
+header .login_area .go li {
+    color: #0b1f48;
+    font-weight: 500;
+    font-size: 14px;
+    height: 36px;
+    white-space: nowrap;
+    padding: 0 16px 0 0;
+    text-align: left;
+}
+header .login_area .go p {
+    padding-left: 12px;
+    color: #5e6b81;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: left;
+    letter-spacing: 1.2px;
+}
+header .login_area .go .icon {
+    width: 36px; height: 36px; 
+    display: inline-block;
+}
+header .login_area .go .icon1 {
+    background: url(../images/icon.svg) no-repeat;
+    background-position: center;
+}
+header .login_area .go .icon2 {
+    background: url(../images/icon1.svg) no-repeat;
+    background-position: center;
+}
+header .login_area .go i {
+    vertical-align: middle;
+}
+header .login_area .go .login::after {
+    bottom: -4px;
+    width: 80%;
+    height: 1px;
+    background: #eaedf3;
+    content: "";
+    display: block;
+    margin-left: 36px;
+}
+header .login_area .go .study::after {
+    bottom: -4px;
+    width: 80%;
+    height: 1px;
+    background: #eaedf3;
+    content: "";
+    display: block;
+    }
+
+/* footer */
+footer {
+    padding: 40px 160px 54px 40px;
+    background-color: #17191c;
+    color: #fff;
+    box-sizing: border-box; 
+    overflow: hidden;
+}
+footer .foo_left {overflow: hidden; width: calc(100% - 240px); float: left;}
+footer h1 {
+    float: left;
+    width: 240px; height: 32px;
+    background: url(../images/white_logo.svg) no-repeat;
+}
+footer .foo_middle {
+    float: left;
+    color: #fff;
+    overflow: hidden;
+    font-size: 13px;
+    font-family: 'noto', sans-serif;
+    font-weight: 300;
+}
+footer .foo_middle .introduction {overflow: hidden;}
+footer .foo_middle .introduction a {
+    float: left; display: block;
+}
+
+footer .foo_middle .introduction .bar {
+    width: 1px;
+    height: 10px;
+    background-color: #979797;
+    float: left;
+    margin: 0 20px;
+}
+
+footer .foo_middle address {
+    margin-top: 24px;
+    line-height: 31px;
+    color: #ccc;
+}
+footer .foo_middle address p{
+    font-weight: 300; display: inline-block; color: #f8f8f8;
+    margin-right: 12px;
+}
+footer .foo_middle address .bar {
+    width: 1px;
+    height: 10px;
+    background-color: #979797;
+    display: inline-block;
+    margin: 0 20px;
+}
+footer .foo_middle .copy {
+    display: block;
+    margin: 10px 0;
+}
+
+footer .foo_right {
+    float: right;
+}
+footer .foo_right .newsletter {
+    display: inline-block;
+    width: 240px;
+    margin-bottom: 30px;
+    padding-bottom: 8px;
+    font-weight: 500;
+    font-size: 18px;
+    border-bottom: 2px solid #7c7d7f;
+    font-family: 'noto', sans-serif;
+    background: url(../images/Newsletter.png) no-repeat;
+    background-size: 24px;
+    background-position: right;
+}
+footer .foo_right .sns_area {
+    text-align: right;
+    margin-left: 48px;
+    overflow: hidden;
+}
+footer .foo_right .sns_area a {
+    float: left;
+    width: 48px; height: 40px;
+}
+footer .foo_right .sns_area .youtube {
+    background: url(../images/sns_area_you.svg) no-repeat;
+    background-position: center;
+}
+footer .foo_right .sns_area .blog {
+    background: url(../images/sns_area_blog.svg) no-repeat;
+    background-position: center;
+}
+footer .foo_right .sns_area .instar {
+    background: url(../images/sns_area_in.svg) no-repeat;
+    background-position: center;
+}
+footer .foo_right .sns_area .facebook {
+    background: url(../images/sns_area_facebook.svg) no-repeat;
+    background-position: center;
+}
+footer .topScroll {
+    position: absolute;
+    right: 0; right: 60px;
+    margin-top: -70px;
+    width: 50px; height: 50px;
+    font-size: 13px;
+    text-align: center;
+    background: url(../images/top.png) no-repeat #0a51b7;
+    background-position: center 12px;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+
+/* @미디어쿼리 */
+
+/*
+  가장중요한 조건
+  가로스롤은 절대 생기면 안된다.
+  가로스크롤이 생기는이유는
+  - 위드가 살이있는영역 ex)1200 1000px
+  - absolute ->부모한테 무조건 overflow hidden을 줘야됨
+  모바일 확인은 최고 작은 사이즈인 320 (크롬모바일 아이폰se) 확인시 잘나오묜 끝.
+ */
+
+/* 실콘텐츠 + 100 */
+/* 1300 */
+@media screen and (max-width: 1500px) {
+    /* header */
+header .menu_area nav .menu > li {margin: 0 20px;}
+    /* main */
+    /* footer */
+footer {display: block; box-sizing: border-box; padding: 30px 24px 24px; }
+footer .foo_left {width: 100%;}
+footer .topScroll {display: none;}
+
+footer .foo_middle {padding-top: 24px; /* width: 100%;  font-size: 12px; float: none; */}
+footer .foo_middle .introduction .bar {margin: 5px 12px;}
+footer .foo_middle .introduction a {line-height: 20px;}
+
+footer .foo_middle address .bar {display: none;}
+footer .foo_middle address .mobile_br {display: block; }
+footer .foo_middle address .ml20 {padding-left: 20px;}
+
+footer .foo_right {float: left; display: block;  margin-top: 40px; width: 100%;}
+footer .foo_right .newsletter {width: 100%; line-height: 1.6;}
+footer .foo_right .sns_area {margin-left: -12px;}
+
+
+}
+@media screen and (max-width: 1230px) {
+    header .menu_area h1 {
+        left: 70px;
+    } 
+    header .menu_area nav .menu {display: none;}
+    header .menu_area nav .menu.on {    position: fixed;
+        display: block;
+        background: #fff;
+        top: 64px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 8px 24px 8px 12px;
+        box-sizing: border-box; overflow-y: scroll;
+    }
+    header .m_menu {
+        width: 24px; height: 24px;
+        background: url(../images/menu.svg);
+        display: block;
+        position: absolute;
+        top: 50%; left: 20px;
+        transform: translateY(-50%);
+    }
+    header .m_menu.on {background: url(../images/menu_x.svg);}
+    header .menu_area nav .menu > li {float: none; width: 94%; text-align: left; border-bottom: 1px solid #ccc;}
+    header .menu_area .dept1 {position: relative; font-size: 16px; height: 65px;}
+    header .menu_area .dept1::after {position: absolute; top: 0; right: 0; left: auto; width: 24px; height: 100%;background: url(../images/dept1.on.svg) no-repeat; background-position: 50%; opacity: .3; content: "";}
+    header .menu_area .dept1.on {border-bottom: 1px solid #0d2a58;}
+    header .menu_area .dept1.on::after {transform: rotate(180deg); opacity: 1;}
+    header .sub {padding: 10px 0; position: inherit; }
+    header .sub h3 {display: none;}
+    .menu_area .menu .sub .dept3 li {font-size: 14px; padding: 9px 10px; width: 100%; line-height: 20px;}
+    .menu_area .menu .sub .flot li {display: inline-block; width: 200px; padding: 4px 10px;}
+    header .sub .dept2 > li {display: block; font-size: 14px;}
+
+}
+ 
+  /*
+  테블릿
+  중대적인 레이아웃 변화
+  폰트사이즈 줄여준다 아래와같은룰로
+  */
+  @media screen and (max-width: 1024px) {
+/* 헤더 */
+header .login_area .dn1024 {display: none;}
+header .login_area .do1024 {display: block;}
+header .login_area .do1024 .do1024_login img{ width: 36px; height: 36px;
+    vertical-align: middle; background-color: #e2e7ed;
+    border-radius: 15px; margin-left: 7px;
+}
+header .login_area .do1024 .sub1 {width: 145px;}
+header .login_area .do1024 .sub1 .do1024_language {border-top: 1px solid #e6e9ee;}
+header .login_area .do1024 .sub1 .do1024_language a{ display: inline-block; float: left;}
+header .login_area .do1024 .sub1 .do1024_language .Korean {margin-right: 26px; position: relative; color: #0052cc;}
+header .login_area .do1024 .sub1 .do1024_language .Korean::after {    position: absolute; top: 16px; right: -13px; width: 4px; height: 4px; background: #0d2a58; border-radius: 50%; opacity: .25; content: "";}
+  /* 푸터 */
+
+  }
+  
+  /*
+   모바일
+   *대대적 레이아웃 변화
+   사이드 패딩 15~20
+   대폰트 font-size: 38~28
+   중폰트 18~28
+   소폰트 12~ 16
+   웬만한 레이아웃은 1줄 아니면 2줄
+  */
+  @media screen and (max-width: 768px) {
+    body {padding-top: 64px;}
+    /* header */
+    header {height: 64px; padding: 0 20px; box-sizing: border-box;}
+    header .menu_area h1 {left: 56px;}
+    .login_area .login {display: none;}
+
+  }
