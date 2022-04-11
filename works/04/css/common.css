@@ -1,0 +1,12 @@
+.blind {
+    width: 1px; height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0 0 0 0);
+}
+
+.sc_items .btn,
+.sc_issue .btn {
+    background: url(../images/SMBM_Arrow_PC_B.svg) no-repeat;
+}
