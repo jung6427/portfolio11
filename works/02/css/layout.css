@@ -1,0 +1,655 @@
+@import 'reset.css';
+@import 'common.css';
+
+/* font-family: 'noto', sans-serif; */
+@font-face {
+    font-family: 'noto';
+    src: url('../font/noto/NotoL.ttf') format('truetype'),
+         url('../font/noto/NotoL.woff') format('woff'),
+         url('../font/noto/NotoL.eot'),
+         url('../font/noto/NotoL.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'noto';
+    src: url('../font/noto/NotoR.ttf') format('truetype'),
+         url('../font/noto/NotoR.woff') format('woff'),
+         url('../font/noto/NotoR.eot'),
+         url('../font/noto/NotoR.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'noto';
+    src: url('../font/noto/NotoM.ttf') format('truetype'),
+        url('../font/noto/NotoM.woff') format('woff'),
+        url('../font/noto/NotoM.eot'),
+        url('../font/noto/NotoM.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'noto';
+    src: url('../font/noto/NotoB.ttf') format('truetype'),
+        url('../font/noto/NotoB.woff') format('woff'),
+        url('../font/noto/NotoB.eot'),
+        url('../font/noto/NotoB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: bold;
+}
+/* ///// font-family: 'noto', sans-serif; */
+@font-face {
+    font-family: 'gilroy';
+    src: url('../font/gilroy/Gilroy-Regular.woff2') format('truetype');
+    font-weight: 400;
+    font-style: bold;
+}
+@font-face {
+    font-family: 'gilroy';
+    src: url('../font/gilroy/Gilroy-Medium.woff2') format('truetype');
+    font-weight: 500;
+    font-style: bold;
+}
+@font-face {
+    font-family: 'gilroy';
+    src: url('../font/gilroy/Gilroy-SemiBold.woff2') format('truetype');
+    font-weight: 600;
+    font-style: bold;
+}
+@font-face {
+    font-family: 'gilroy';
+    src: url('../font/gilroy/Gilroy-Bold.woff2') format('truetype');
+    font-weight: 700;
+    font-style: bold;
+}
+
+body {
+    font-family: 'gilroy', 'noto', sans-serif;
+    font-weight: 400;
+}
+body.hidden {
+    overflow: hidden;
+
+}
+
+/* header */
+.top_slide {
+    background: #030303;
+    color: #fff;
+    width: 100%;
+    height: 40px;
+}
+.top_slide .swiper-slide {
+    text-align: center;
+    font-size: 13px;
+    line-height: 40px;
+    background: #030303;
+
+}
+.top_slide strong{
+    font-weight: 700;
+}
+.top_slide .red{
+    color: #ee5728;
+    display: inline;
+}
+.top_slide p {
+    display: inline;
+    font-weight: 700;
+}
+.top_slide .kakao {
+    background: url(../images/index/top_slide_Icon_kakao_channel.png) no-repeat;
+    width: 17px; height: 18px;
+    display: inline-block;
+    background-size: contain;
+    vertical-align: middle;
+    margin-left: 7px;
+}
+.white_arrow {
+    background: url(../images/index/top_slide_arrow_wh.png) no-repeat;
+    width: 24px; height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 9px;
+}
+/* 메인에서 none 스크롤 내리면 나타나는 헤더 */
+.header_fixd {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+.header_top {
+    height: 56px;
+    position: relative;
+}
+.header_top h1 {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 87px; height: 23px;
+    background-image: url(../images/main_logo_m.svg);
+    background-size: contain;
+    z-index: 1;
+}
+.header_top h1 a {display: block; width: 100%; height: 100%;}
+.header_top .left {
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+}
+.header_top .left .menu{
+    float: left;
+    width: 22px; height: 17px;
+    background-position: -25px -50px;
+    margin-right: 20px;
+}
+.header_top .left .search {
+    background-position: -25px -75px;
+    width: 17px; height: 18px;
+    float: right;
+}
+
+
+.header_top .right {
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+}
+.header_top .right .shoppingbag{
+    float: left;
+    width: 19px; height: 18px;
+    background-position: -25px -25px;
+}
+.header_top .right .login{
+    margin-left: 20px;
+    width: 18px; height: 18px;
+    background-position: -25px 0;
+    float: right;
+}
+
+/* fixed 스크롤 되었을때  영역 ! */
+.header_fixd.fixed {
+    background: #fff;
+    top: 0;
+}
+.header_fixd.fixed h1 {
+    background-image: url(../images/index/logo.png);
+}
+.header_fixd.fixed .left .menu {background-position: 0 -50px;}
+.header_fixd.fixed .left .search {background-position: 0 -75px;}
+.header_fixd.fixed .right .shoppingbag {background-position: 0 -25px;}
+.header_fixd.fixed .right .login {background-position: 0 0;}
+
+.header_fixd.fixed .header_bottom {display: block;}
+
+.header_bottom {
+    display: none;
+    /* height: 23px;
+    padding: 11px 0 11px 15px; */
+    position: relative;
+}
+.header_bottom .nav {
+    padding: 11px 0 11px 15px;
+    position: relative;
+    box-sizing: border-box;
+    z-index: 1;
+    background: #fff;
+    width: calc(100% - 33px);
+    overflow-x: auto;
+}
+.header_bottom .nav {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+.header_bottom .nav::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+
+.header_bottom .nav ul {
+    white-space: nowrap;
+    display: block;
+}
+.header_bottom .nav ul:after {
+    clear: both;
+    content: '';
+    display: block;
+}
+.header_bottom .nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.header_bottom .nav a {
+    /* float: left;
+    margin-right: 15px;
+    font-weight: 500; */
+}
+.header_bottom .nav .all {
+    display: none;
+    position: absolute;
+    top: 0;
+    background: #fff;
+    width: 435px;
+    height: 38px;
+    line-height: 38px;
+}
+.header_bottom .nav .all.on {
+    display: block;
+}
+.header_bottom .all_menu {
+    display: none;
+}
+.header_bottom .all_menu ul {
+    position: relative;
+    display: flex;
+    padding: 6px 12px;
+    *max-height: 145px;
+    max-height: fit-content;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    background: #F6F6F6;
+    border-top: 1px solid #dcdcdc;
+}
+
+.header_bottom .all_menu li {
+    display: inline-block;
+    padding: 8px 17px;
+    margin: 3px 3px;
+    border: 1px solid #ebebeb;
+    border-radius: 100px;
+    box-sizing: border-box;
+    background: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000;
+    letter-spacing: -0.05em;
+    font-weight: 500;
+}
+
+.header_bottom .open {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    bottom: 11px;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background: url(https://m.andar.co.kr/common/mo/btn_open.png) no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+.header_bottom .open.on {
+    transform: rotate(180deg);
+}
+
+.header_bottom .orange {
+    color: #ee5728;
+    font-weight: 400;
+}
+.header_bottom .orange::after {
+    position: relative;
+    top: -8px;
+    right: -2px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #ee5728;
+    display: inline-block;
+    content: "";
+}
+.header_bottom .comma::after {
+    position: relative;
+    top: -8px;
+    right: -2px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #ee5728;
+    display: inline-block;
+    content: "";
+}
+
+/* ////////////////일단 감춰둠  */
+.header_fixd .bg {
+    z-index: 11;
+    top: 0; left: 0; bottom: 0; right: 0;
+    opacity: 0;
+    visibility: hidden; 
+    position: fixed;
+    background: rgba(0,0,0,0.65);
+    transition: 0.4s;
+    /* 단순 외형만 감추는거  none와는 다름 영역을 차지 하지 않음 */
+}
+.header_fixd .bg.on {
+    opacity: 1;
+    visibility: visible;
+}
+.menu_js {
+    padding: 0 24px 0 16px;
+    color: #333;
+    font-size: 13px;
+    background: #fff;
+    position: fixed;
+    top: 0; left: 0;
+    width: 80%;
+    transform: translateX(-100%);
+    transition: 0.5s;
+    z-index: 12;
+    height: 100%;
+    overflow-y: auto;
+}
+.menu_js.on {
+    transform: translateX(0);
+}
+.menu_js .login_area .join {
+    font-size: 13px;
+    background: #0e0e0e;
+    display: block;
+    float: left;
+    border: 1px solid #222;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 4px;
+    letter-spacing: -1px;
+    padding: 10px 26px;
+    line-height: 15px;
+}
+.menu_js .login_area .close {
+    background-image: url(../images/search/icon_close.png);
+    width: 24px; height: 24px;
+    position: absolute;
+    top: 17px; right: 20px;
+    display: block;
+}
+.menu_js .login_area {
+    padding: 38px 0 26px;
+    border-bottom: 1px solid #ddd;;
+}
+
+.menu_js .login_area .admission {
+    margin-left: 12px;
+    background: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+
+}
+.menu_js .login_area p {
+    display: block;
+    clear: both;
+    padding-top: 15px;
+    color: #777;
+    font-weight: 400;
+    line-height: 20px;
+}
+.menu_js .login_area .bold {
+    font-weight: 700;
+}
+/* //////////////login_area */
+.menu_js .menu_area {
+    padding: 18px 0 11px;
+}
+.menu_js .menu_area ul li {
+    display: block;
+    color: #333;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 500;
+}
+.menu_js .menu_area > ul > li > a{
+    display: block;
+    position: relative;
+    line-height: 28px;
+    padding: 11px 0;
+}
+
+.menu_js .menu_area > ul > li > .dept1::after{
+    display: block;
+    width: 30px;
+    height: 28px;
+    transition-duration: .3s;
+    background: url(https://m.andar.co.kr/common/mo/btn_open.png) no-repeat;
+    background-size: 28px auto;
+    background-position: center;
+    content: "";
+    position: absolute;
+    top: 10px; right: 0;
+}
+.menu_js .menu_area > ul > li > .dept1.on::after {
+    transform: rotate(180deg);
+    transition-duration: .3s;
+}
+.menu_js .menu_area ul li .point {
+    color: #ee5728;
+}
+.menu_js .menu_area ul li .event span::after{
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: #EE5728;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.menu_js .menu_area .sub {
+    display: none;
+}
+.menu_js .menu_area .sub .wrap {
+    display: none;
+}
+
+.menu_js .menu_area .sub ul li {
+    display: block;
+    padding: 11px 0;
+    color: #848484;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 400;
+}
+/* ////////////////// .menu_area  */
+
+.menu_js .board_area {padding: 18px 0 11px; border-top: 1px solid #ddd;}
+.menu_js .board_area > ul > li > a{display: block;position: relative;}
+.menu_js .board_area .sub { display: none; margin-top: 10px;}
+.menu_js .board_area .sub ul li {display: block; padding: 9px 0; color: #848484;
+    font-size: 16px; line-height: 20px;font-weight: 400;
+}
+.menu_js .board_area .sub ul li:last-child {padding-bottom: 0;}
+.menu_js .board_area > ul > li > .dept1::after{display: block; width: 30px;
+    height: 28px; transition-duration: .3s;
+    background: url(https://m.andar.co.kr/common/mo/btn_open.png) no-repeat;
+    background-size: 28px auto; background-position: center;
+    content: ""; position: absolute; top: -8px; right: 0;
+}
+.menu_js .board_area > ul > li > .dept1.on::after {transform: rotate(180deg);
+    transition-duration: .3s;
+}
+.menu_js .board_area > ul > li{display: block; padding: 13px 0; color: #2d2d2d;
+    font-size: 16px; line-height: 20px; font-weight: 400;
+}
+/* //////////////.board_area */
+.menu_js .along_area {
+    padding: 40px 0;
+}
+.menu_js .along_area h2 {
+    padding: 0;
+    color: #333;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+}
+.menu_js .along_area img {
+    margin: 20px 0;
+    max-width: 70px;
+    display: block;
+    padding: 0;
+}
+.menu_js .along_area a {position: relative; display: inline-block;
+    border: 1px solid #ccc; border-radius: 2px;
+    padding: 10px 48px 10px 18px; box-sizing: border-box; color: #777; 
+    font-size: 13px; line-height: 18px; font-weight: 400; letter-spacing: -0.03em;
+}
+.menu_js .along_area .icon {background: url(../images/more_btn.png) no-repeat;
+    background-size: 15px auto; display: inline-block; width: 25px; 
+    height: 15px; position: absolute; right: 8px; top: 13px;
+}
+.header_fixd .serch_area {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 0; right: 0; left: 0; bottom: 0;
+    background: url(../images/search/20211126-1.jpg) no-repeat center;
+    background-size: cover;
+    z-index: 12;
+}
+.header_fixd .serch_area.on {
+    visibility: visible;
+    opacity: 1;
+}
+.header_fixd .home {
+    background: url(../images/search/close_search.png) no-repeat;
+    width: 10px;
+    height: 18px;
+    background-size: contain;
+    display: block;
+    margin: 18px 20px;
+}
+.header_fixd .serch_area form {
+    position: absolute;
+    top: 50%; width: 100%;
+    transform: translatey(-50%);
+}
+.header_fixd .serch_area form fieldset {
+    padding: 0 9.72%;
+}
+.header_fixd .serch_area form input {
+    border: none;
+    background: none;
+    border-bottom: 2px solid #fff;
+    height: 43px;
+    line-height: 43px;
+    font-size: 20px;
+    width: 100%;
+    color: #fff;
+    font: inherit;
+}
+.header_fixd .serch_area form input::placeholder {
+    color: #fff;
+}
+.header_fixd .serch_area form button {
+    position: absolute;
+    top: 50%; right: 9.72%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    width: 19px; height: 19px;
+    background-image: url(../images/search/search.png);
+    background-size: contain;
+}
+
+/* footer */
+footer {
+    padding: 40px 16px;
+    color: #555555;
+
+}
+.foo_top .cs_center {
+    margin-bottom: 30px;
+}
+.foo_top .cs_center h3 {
+    font-size: 13px;
+    padding-bottom: 15px;
+    font-weight: 500;
+}
+.foo_top .cs_center strong {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    display: block;
+}
+.foo_top .cs_center p {
+    font-size: 13px;
+    margin-bottom: 5px;
+    line-height: 21px;
+}
+.foo_top .cs_center .bold {
+    font-weight: 600;
+}
+/* ///////////////cs_center */
+.sns_area {
+    overflow: hidden;
+}
+.sns_area a {
+    float: left;
+    margin-right: 30px;
+}
+.sns_area img {
+    height: 22px;
+}
+/* /////////////////////.sns_area */
+.foo_bottom .clause{
+    padding: 30px 0;
+    font-size: 12px;
+    color: #777;
+    font-weight: 700;
+    overflow: hidden;
+    line-height: 40px;
+}
+.foo_bottom .clause a {float: left; display: inline-block;  }
+.foo_bottom .clause .bar {margin: 14px 10px 0 10px;
+    width: 1px; height: 12px;
+    background: #ccc;
+    float: left;
+    margin-top: 14px;
+
+}
+.foo_bottom address {
+    font-size: 11px;
+    color: #777;
+    font-weight: 400;
+    line-height: 20px;
+}
+.foo_bottom address span {display: inline-block;}
+.foo_bottom address .bar {
+    width: 1px; height: 12px;
+    background: #ccc;
+    margin: 0 5px;
+    display: inline-block;
+    line-height: 20px;
+
+}
+
+.foo_bottom p{
+    font-size: 11px;
+    margin-top: 30px;
+    color: #777;
+}
+.foo_bottom .mark {
+    margin-top: 24px;
+    overflow: hidden;
+    height: 50px;
+}
+.foo_bottom .mark a {
+    float: left;
+    margin-right: 24px;
+}
+.foo_bottom .mark .gong {
+    width: 45px;
+    padding-top: 3px;
+}
+.foo_bottom .mark .sym {
+    width: 36px;
+}
+.foo_bottom .mark .kg {
+    width: 27px;
+    padding-top: 3px;
+}
+.foo_bottom .mark img {
+    width: 100%;
+}
