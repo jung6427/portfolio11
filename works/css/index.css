@@ -1,0 +1,353 @@
+/* .sc_visual */
+.sc_visual {
+    position: relative;
+}
+.sc_visual .swiper .swiper-wrapper .swiper-slide img {
+    width: 100%;
+    height: 739px;
+    object-fit: cover;
+    background-position: center;
+    
+}
+.sc_visual .swiper .swiper-wrapper .swiper-slide .txt_area {
+    position: absolute;
+    color: #fff;
+    width: 100%;
+    bottom: 0;
+    padding: 20% 7.5%;
+    box-sizing: border-box;
+}
+.sc_visual .txt_area strong{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 40px;
+    height: 78px;
+}
+.sc_visual .swiper .swiper-wrapper .swiper-slide .txt_area p {
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+}
+.sc_visual .swiper .swiper-pagination {
+    bottom: 50px;
+}
+.sc_visual .swiper .swiper-pagination-bullet {
+    margin: 0;
+    width: 20px; height: 2px;
+    border-radius: none;
+    background: #fff;
+}
+/* ///////////.sc_visual */
+
+/*sc_division4  레이아웃 */
+.sc_division4 h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 50px;
+    margin: 50px 16px 22px;
+}
+.sc_division4 .content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.sc_division4 .con {
+    width: calc(50% - 5px);
+    margin-bottom: 50px;
+}
+.sc_division4 .con img {
+    width: 100%;
+}
+.sc_division4 .more {height: 52px; border: 1px solid #e0e0e0; 
+    margin: 50px 38px 60px; display: block; line-height: 52px; 
+    text-align: center; font-size: 15px; font-weight: 500;
+}
+.black_arrow {
+    background: url(../images/index/black_arrow.png) no-repeat;
+    width: 24px; height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: contain;
+    margin-bottom: 7px;
+}
+/* ////////////// sc_division4  레이아웃 */
+
+/* sc_banner */
+.sc_banner {
+    max-width: 1126px;
+    margin: 0 auto;
+}
+.sc_banner img {
+    width: 100%;
+}
+/* ////////////// sc_banner */
+
+/* 22 SS 신상 셋업, 추천 */
+section {    
+    margin-top: 20px;
+}
+section .content {
+    margin-bottom: 40px;
+}
+section .content img {
+    width: 100%;
+}
+section .content .txt_area1 {
+    width: 100%;
+    padding: 20px 16px 20px;
+    box-sizing: border-box;
+    height: 242px;
+}
+section .content .txt_area1 strong {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 35px;
+    color: #333;
+}
+section .content .txt_area1 p {
+    padding: 4px 0 28px;
+    line-height: 26px;
+}
+section .content .txt_area1 .go {
+    display: block;
+    background: #1e1e1e;
+    color: #fff;
+    width: 117px; height: 38px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 8px 0 0 18px;
+    box-sizing: border-box;
+}
+section .content .txt_area1 .icon_move {
+    background: url(../images/index/Icon_move.png) no-repeat;
+    width: 16px; height: 14px;
+    background-size: contain;
+    background-position: center;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+section .content .slae {
+    margin-left: 16px;
+}
+section .content .slae .con{display: flex;margin-top: 20px;}
+section .content .slae .con:first-child {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+section .content .slae .con .img_area {
+    margin-right: 28px;
+    position: relative;
+}
+section .content .slae .con .img_area img {
+    width: 110px;
+}
+section .content .slae .con .img_area .new img {
+    width: 30px;
+    position: absolute;
+    top: 0; right: 0;
+}
+section .content .slae .con .txt_area2 {
+    
+    width: 285px;
+    margin-top: 43px;
+    box-sizing: border-box;
+    padding: 0;
+}
+/* //////////////22 SS 신상 셋업, 추천 */
+
+/* sc_recruitment 이달의 신상*/
+.sc_recruitment .content .con .img_area {
+    position: relative;
+}
+.sc_recruitment .content .con .img_area .new {
+    width: 23%;
+    position: absolute;
+    top: 0; right: 0;
+}
+/*///////////////////// sc_recruitment 이달의 신상*/
+
+/* 텍스트 공통 부분 */
+.txt_area2 {
+    width: 100%;
+    padding: 15px 5% 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    line-height: 13px;
+}
+.txt_area2 em {
+    color: #8e1f29;
+    font-size: 13px;
+    font-weight: 700;
+}
+.txt_area2 strong {
+    display: -webkit-box;
+    line-height: 18px;
+    margin: 10px 0;
+    font-size: 14px;
+    letter-spacing: -0.9px;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 20px;
+}
+.txt_area2 .inline {
+    float: left;
+    margin-right: 5px;
+}
+.txt_area2 .prime {
+    font-size: 15px;
+    font-weight: 500;
+    float: left;
+}
+.txt_area2 span {
+    color: #8d8d8d;
+    font-size: 13px;
+    margin-left: 5px;
+    font-weight: 500;
+}
+.txt_area2 .through {
+    text-decoration:line-through;
+}
+.txt_area2 .block {
+    display: block;
+    color: #999;
+    margin-top: 9px;
+    margin-left: 0;
+}
+/* ////////////////텍스트 공통 부분 */
+
+/* sc_story */
+.sc_story {
+    height: 309px;
+    width: 100%;   
+    background: #c86733;
+    padding: 56px 24px;
+    box-sizing: border-box;
+    color: #fff;
+}
+.sc_story h2 {
+    font-size: 18px;
+    font-weight: 400;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.sc_story strong{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+}
+.sc_story p{
+    font-size: 12px;
+    padding: 10px 0 5px;
+}
+.sc_story .go{
+    width: 100px; height: 36px;
+    border: 1px solid #fff;
+    display: block;
+    line-height: 36px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
+/* /////////////////////sc_story */
+
+/* sc_merchandise 상품, 레깅스 브라탑 세트 */
+.sc_merchandise {
+    margin-left: 20px;
+}
+.sc_merchandise .slide .title_group{
+    overflow: hidden;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.sc_merchandise .slide .title_group h3 {
+    font-size: 20px;
+    font-weight: 600;
+    float: left;
+}
+.sc_merchandise .slide .more {
+    float: right;
+    font-size: 14px;
+    margin-right: 20px;
+    display: block;
+}
+
+.sc_merchandise .slide .more .icon_move {
+    background: url(../images/index/icon-move-gr.png) no-repeat; width: 18px; 
+    height: 15px; background-size: contain; background-position: center;
+    display: inline-block; vertical-align: middle; margin-bottom: 7px;
+}
+.sc_merchandise .slide .swiper .swiper-wrapper .swiper-slide {
+    width: 850px;
+}
+.sc_merchandise .slide .swiper .swiper-wrapper .swiper-slide img {
+    width: 100%;
+}
+.sc_merchandise .base {
+    height: 21px; width: 52px;
+    line-height: 21px;
+    display: inline-block;
+    border: 1px solid rgba(142,31,41,0.5);
+    box-sizing: border-box;
+    color: #8e1f28;
+    font-size: 9px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 14px;
+}
+/* 안다르 멤버십, 오프라인 매장안내 */
+
+/* 공통 */
+.info {
+    background-size: 100%;
+    color: #fff;
+    padding: 65px 20px;
+    box-sizing: border-box;
+}
+.info h2 {
+    font-size: 26px;
+    font-weight: 700;
+}
+.info p {
+    font-size: 15px;
+    padding: 15px 0 30px;
+    line-height: 21px;
+    font-weight: 400;
+}
+.info span {
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 9px 24px 2px;
+    box-sizing: border-box;
+    width: 122px; height: 35px;
+    font-size: 15px;
+    letter-spacing: -0.03em;
+}
+/* 멤버십 */
+.sc_membership {
+    height: 283px;
+    width: 100%;
+    background: url(../images/index/sc_membership.jpg) no-repeat;
+    margin-top: 70px;
+    background-position: center;
+    background-size: cover;
+}
+
+/* ///////////////안다르 멤버십 */
+
+/* 오프라인 매장안내 */
+.sc_sale {
+    margin-top: 10px;
+    height: 328px;
+    background: url(../images/index/sc_sale.jpg) no-repeat;
+    padding: 80px 20px 74px;
+    background-position: center;
+    background-size: cover;
+}

@@ -1,0 +1,16 @@
+.blind {
+    width: 1px; height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0 0 0 0);
+}
+
+.header_top .left .menu,
+.header_top .left .search,
+.header_top .right .shoppingbag,
+.header_top .right .login{
+    background-image: url(../images/index/sp_common_layout.png);
+    background-repeat: no-repeat;
+    background-size: 100px auto;
+}
