@@ -1,0 +1,122 @@
+@charset "UTF-8";
+@import url("./reset.css");
+@import url("./common.css");
+/* 상대경로 필수  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+@font-face { font-family: 'noto'; src: url("../font/noto/notoL.ttf") format("truetype"), url("../font/noto/notoL.woff") format("woff"), url("../font/noto/notoL.eot"), url("../font/noto/notoL.woff2") format("woff2"); font-weight: 300; font-style: normal; }
+
+@font-face { font-family: 'noto'; src: url("../font/noto/notoR.ttf") format("truetype"), url("../font/noto/notoR.woff") format("woff"), url("../font/noto/notoR.eot"), url("../font/noto/notoR.woff2") format("woff2"); font-weight: 400; font-style: normal; }
+
+@font-face { font-family: 'noto'; src: url("../font/noto/notoM.ttf") format("truetype"), url("../font/noto/notoM.woff") format("woff"), url("../font/noto/notoM.eot"), url("../font/noto/notoM.woff2") format("woff2"); font-weight: 500; font-style: normal; }
+
+@font-face { font-family: 'noto'; src: url("../font/noto/notoB.ttf") format("truetype"), url("../font/noto/notoB.woff") format("woff"), url("../font/noto/notoB.eot"), url("../font/noto/notoB.woff2") format("woff2"); font-weight: 700; font-style: bold; }
+
+body { min-width: 1153px; color: #0d0d0d; font-size: 20px; font-family: 'noto', sans-serif; line-height: 1.4; /* font-family: 'Poppins', sans-serif; */ }
+
+body.on { overflow: hidden; }
+
+header { position: fixed; left: 0; top: 0; background: transparent; z-index: 10; width: 100%; -webkit-transition: opacity .8s,color .3s; transition: opacity .8s,color .3s; padding: 20px 50px; min-width: 852px; -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-transition: .3s ease-in-out; transition: .3s ease-in-out; }
+
+header.hide { -webkit-transform: translateY(-100%); transform: translateY(-100%); }
+
+header .header_flex { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+header .header_flex .menu { width: 50px; height: 50px; /* background: #f01; */ position: relative; z-index: 31; }
+
+header .header_flex .menu i { position: absolute; width: 90%; height: 1px; background: #fff; top: 37%; left: 5%; }
+
+header .header_flex .menu .downi { margin-top: 10px; }
+
+header .header_flex h1 { width: 100px; height: 50px; color: #fff; margin-right: auto; margin-left: 30px; font-size: 30px; line-height: 44px; font-weight: 700; font-family: 'Poppins', sans-serif; }
+
+header .header_flex h1 a { display: block; height: 100%; }
+
+header .header_flex .right { color: #fff; display: -webkit-box; display: -ms-flexbox; display: flex; font-family: 'Poppins', sans-serif; }
+
+header .header_flex .right a + a { margin-left: 30px; }
+
+header .menu_open { position: fixed; top: 0; left: -100%; width: 100%; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; z-index: 30; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; background: #cdbeae; overflow: hidden; -webkit-transition: 0.3s; transition: 0.3s; font-family: 'Poppins', sans-serif; /* &.left{transform: translatex(-100%);} */ }
+
+header .menu_open .left_menu { width: 70%; font-size: 57.6px; }
+
+header .menu_open .left_menu .menu_list { color: #fff; padding: 30px 88px 0 12rem; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+header .menu_open .left_menu .menu_list li { height: 120px; display: -ms-flexbox; display: -webkit-box; display: flex; -ms-flex-align: center; -webkit-box-align: center; align-items: center; -ms-flex-pack: end; -webkit-box-pack: end; justify-content: flex-end; position: relative; overflow: hidden; -webkit-transition: height 0.6s cubic-bezier(0.48, 1.02, 0.75, 1); transition: height 0.6s cubic-bezier(0.48, 1.02, 0.75, 1); border-bottom: 1px solid #fff; }
+
+header .menu_open .left_menu .menu_list li:hover { height: 144px; }
+
+header .menu_open .left_menu .menu_list li:last-child { border-bottom: 0; }
+
+header .menu_open .left_menu .menu_list li a { display: inline-block; padding: 0 19.2px; }
+
+header .menu_open .left_menu .menu_down { color: #fff; margin: 54px 88px 96px 0; line-height: 40px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: end; }
+
+header .menu_open .left_menu .menu_down h3 { font-size: 19.2px; margin-left: 42px; }
+
+header .menu_open .left_menu .menu_down span { font-size: 19.2px; margin-left: 76.8px; }
+
+header .menu_open .left_menu .menu_down span:first-child { margin-left: 0; }
+
+header .menu_open .left_menu .menu_down a { font-size: 28.8px; margin-left: 38.4px; display: inline-block; }
+
+header .menu_open .left_menu .menu_down a:hover { text-decoration: underline; }
+
+header .menu_open .left_menu .menu_down .umbrella { font-size: 19.2px; text-decoration: underline; margin-left: 57.6px; }
+
+header .menu_open .left_menu .menu_down .umbrella:hover { text-decoration: none; }
+
+header .menu_open .right_menu { left: 70%; width: 30%; background: url(../images/menu-bg.jpg) no-repeat 50% 50%; opacity: 1; -webkit-transform: translate(0px, 0px); transform: translate(0px, 0px); background-size: cover; background-position: 50%; }
+
+header .menu_open.on { left: 0; -webkit-transition: 0.3s; transition: 0.3s; }
+
+header.fixed { background: #fff; }
+
+header.fixed .page-header .header_flex h1 { background: url(../images/logo_black.svg) no-repeat; }
+
+header.fixed .page-header .header_flex .right a { color: #000; }
+
+header.fixed .left i { background: #000; }
+
+footer { padding: 130px 150px; background: #ebe7e1; color: #4c4943; /* min-width: 1733px; */ }
+
+footer .top_area { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+footer .top_area .logo_area { -webkit-box-flex: 1.3; -ms-flex: 1.3; flex: 1.3; font-family: 'Poppins', sans-serif; margin-right: 20px; }
+
+footer .top_area .logo_area h2 { font-weight: 700; font-size: 30px; color: #000; }
+
+footer .top_area .concierge_area { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; margin-right: 20px; }
+
+footer .top_area .concierge_area h3 { font-size: 25px; margin-bottom: 10px; }
+
+footer .top_area .cs_area { -webkit-box-flex: 0.8; -ms-flex: 0.8; flex: 0.8; }
+
+footer .top_area .cs_area h3 { font-size: 25px; margin-bottom: 10px; }
+
+footer .top_area .link_btn { width: 124px; display: block; color: #fff; background: #4c4943; text-align: center; margin-top: 10px; font-size: 15px; border-radius: 10px; padding: 5px 10px; }
+
+footer .middle_area { display: -webkit-box; display: -ms-flexbox; display: flex; margin: 30px 0; border-top: 1px solid #4c4943; border-bottom: 1px solid #4c4943; }
+
+footer .middle_area .mail { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding: 30px 20px 30px 0; border-right: 1px solid #4c4943; }
+
+footer .middle_area .tip { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; display: -webkit-box; display: -ms-flexbox; display: flex; padding: 30px 0 30px 20px; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+footer .middle_area h3 { display: inline-block; line-height: 54px; width: 400px; text-align: left; }
+
+footer .middle_area a { font-size: 35px; line-height: 54px; display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; word-wrap: break-word; -webkit-line-clamp: 1; text-overflow: ellipsis; height: 54px; }
+
+footer .middle_area a:hover { text-decoration: underline; }
+
+footer .bottom_area { color: #a8a59f; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+footer .bottom_area .left { display: inline-block; }
+
+footer .bottom_area .left a { display: inline-block; margin-right: 28.8px; }
+
+footer .bottom_area .left a:hover { text-decoration: underline; }
+
+footer .bottom_area .left a:last-child { margin-right: 0; }
+
+footer .bottom_area .right a { display: inline-block; margin-right: 28.8px; }
+
+footer .bottom_area .right a:last-child { margin-right: 0; font-weight: 500; }

@@ -1,0 +1,155 @@
+@charset "UTF-8";
+/* sass에서 쓰는 변수 */
+:root { --font-h1:7vw; }
+
+.sc_visual { color: #fff; -webkit-box-sizing: border-box; box-sizing: border-box; height: 100vh; overflow: hidden; position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+.sc_visual .bg { width: 100%; height: 120%; -o-object-fit: cover; object-fit: cover; position: absolute; z-index: -1; top: 0; left: 0; }
+
+.sc_visual .top_area { padding: 0 5vw; /* 폰트에만 한정된게 아니고 다 쓸수 있음 */ }
+
+.sc_visual .top_area em { display: block; font-family: "Poppins", "noto", sans-serif; }
+
+.sc_visual .top_area h2 { font-size: var(--font-h1); line-height: 1; font-family: "Poppins", "noto", sans-serif; font-weight: 300; }
+
+.sc_visual .bottom_area { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding: 0 5vw; padding: 50px 5vw 0; }
+
+.sc_visual .bottom_area .left p { font-size: 28px; display: block; margin-bottom: 38.4px; line-height: 1.4; }
+
+.sc_visual .bottom_area .left .link_more { display: block; font-family: "Poppins", "noto", sans-serif; }
+
+.sc_visual .bottom_area .left .link_more .circle { width: 50px; height: 50px; border-radius: 50%; border: 2px solid #fff; display: inline-block; position: relative; vertical-align: middle; }
+
+.sc_visual .bottom_area .left .link_more .circle::after { content: ""; display: block; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: 50% 50% no-repeat; background-image: url(../images/more_arrow.svg); background-size: 20px; -webkit-transition: -webkit-transform .3s .2s; transition: -webkit-transform .3s .2s; transition: transform .3s .2s; transition: transform .3s .2s, -webkit-transform .3s .2s; -webkit-transform: translateX(0); transform: translateX(0); }
+
+.sc_visual .bottom_area .left .link_more .txt { margin-left: 20px; display: inline-block; }
+
+.sc_visual .bottom_area .right { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.sc_visual .bottom_area .right .bld-slider-container-line { height: 100%; width: 1px; background: #fff; margin-right: 19.2px; display: inline-block; }
+
+.sc_visual .bottom_area .right .swiper { width: 286px; height: 189px; }
+
+.sc_visual .bottom_area .right .swiper .swiper-wrapper { position: relative; }
+
+.sc_visual .bottom_area .right .swiper .swiper-wrapper .swiper-slide img { width: 120%; text-align: center; }
+
+.sc_visual .bottom_area .right .swiper .swiper-wrapper .swiper-slide .txt_area { position: absolute; bottom: 1.5rem; left: 1.5rem; font-weight: 500; font-family: "Poppins", "noto", sans-serif; }
+
+.sc_visual .bottom_area .right .swiper .swiper-pagination-bullet { background: #fff; opacity: 1; width: 0.375rem; height: 0.375rem; margin-right: 0.5625rem; -webkit-transition: .3s; transition: .3s; }
+
+.sc_visual .bottom_area .right .swiper .swiper-pagination-bullet-active { background: #fff; width: 0.625rem; height: 0.625rem; }
+
+.sc_visual .bottom_area .right .projects { width: 185px; display: inline-block; height: 187px; margin-left: 1rem; border: 1px solid #fff; text-align: center; line-height: 169px; font-family: "Poppins", "noto", sans-serif; }
+
+.sc_visual .bottom_area .right .projects a { display: inline-block; width: 100%; height: 100%; font-size: 19.2px; font-weight: 700; }
+
+.sc_visual .bottom_area .right .projects a .arrow { background: url(../images/more_arrow.svg) no-repeat; display: inline-block; width: 31px; height: 31px; vertical-align: middle; margin-top: 8px; }
+
+.sc_Projekt { line-height: 1.4; padding: 130px 150px; -webkit-box-sizing: border-box; box-sizing: border-box; position: relative; color: #fff; background: #161516; overflow: hidden; }
+
+.sc_Projekt .bg { position: absolute; left: -40%; bottom: 0; }
+
+.sc_Projekt .top_area { display: -webkit-box; display: -ms-flexbox; display: flex; margin-bottom: 100px; position: relative; z-index: 1; /* grow 대신 */ }
+
+.sc_Projekt .top_area h2 { font-family: "Poppins", "noto", sans-serif; }
+
+.sc_Projekt .top_area .title { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
+
+.sc_Projekt .top_area .desc { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
+
+.sc_Projekt h3 { font-size: var(--font-h1); font-family: "Poppins", "noto", sans-serif; margin-bottom: 100px; position: relative; z-index: 1; }
+
+.sc_Projekt .bottom_area { display: -webkit-box; display: -ms-flexbox; display: flex; position: relative; z-index: 1; }
+
+.sc_Projekt .bottom_area .link { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; display: block; font-family: "Poppins", "noto", sans-serif; }
+
+.sc_Projekt .bottom_area .link .circle { width: 50px; height: 50px; border-radius: 50%; border: 2px solid #fff; display: inline-block; position: relative; vertical-align: middle; }
+
+.sc_Projekt .bottom_area .link .circle::after { content: ""; display: block; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: 50% 50% no-repeat; background-image: url(../images/more_arrow.svg); background-size: 20px; -webkit-transition: -webkit-transform .3s .2s; transition: -webkit-transform .3s .2s; transition: transform .3s .2s; transition: transform .3s .2s, -webkit-transform .3s .2s; -webkit-transform: translateX(0); transform: translateX(0); }
+
+.sc_Projekt .bottom_area .link .txt { margin-left: 20px; display: inline-block; }
+
+.sc_Projekt .bottom_area .list { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
+
+.sc_Projekt .bottom_area .list ul { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-left: 20px; }
+
+.sc_Projekt .bottom_area .list ul li { width: 50%; }
+
+.sc_Projekt .bottom_area .list ul li:nth-child(2n) { margin-bottom: 50px; }
+
+.sc_Projekt .bottom_area .list ul li span { color: #ece7e4; display: block; margin-bottom: 20px; }
+
+.sc_technologie { padding: 130px 150px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.sc_technologie .top_area { border-top: 1px solid #000; padding: 100px 0 96px 0; display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.sc_technologie .top_area .title { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; font-family: "Poppins", "noto", sans-serif; }
+
+.sc_technologie .top_area .title p { font-size: 28.8px; }
+
+.sc_technologie .top_area .dsec { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
+
+.sc_technologie .bottom_area { margin: 0; -webkit-box-sizing: border-box; box-sizing: border-box; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.sc_technologie .bottom_area .title { -webkit-box-flex: 1; -ms-flex: 1 0 50%; flex: 1 0 50%; }
+
+.sc_technologie .bottom_area .title .txt_area { margin-bottom: 96px; }
+
+.sc_technologie .bottom_area .title .txt_area strong { font-size: var(--font-h1); font-family: "Poppins", "noto", sans-serif; font-weight: 500; line-height: 1; }
+
+.sc_technologie .bottom_area .title .link { display: block; font-family: "Poppins", "noto", sans-serif; }
+
+.sc_technologie .bottom_area .title .link .circle { width: 50px; height: 50px; border-radius: 50%; border: 2px solid #000; display: inline-block; position: relative; vertical-align: middle; }
+
+.sc_technologie .bottom_area .title .link .circle::after { content: ""; display: block; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: 50% 50% no-repeat; background-image: url(../images/black_arrow.svg); background-size: 20px; -webkit-transition: -webkit-transform .3s .2s; transition: -webkit-transform .3s .2s; transition: transform .3s .2s; transition: transform .3s .2s, -webkit-transform .3s .2s; -webkit-transform: translateX(0); transform: translateX(0); }
+
+.sc_technologie .bottom_area .title .link .txt { margin-left: 20px; display: inline-block; }
+
+.sc_technologie .bottom_area .desc { -webkit-box-flex: 1; -ms-flex: 1 0 50%; flex: 1 0 50%; }
+
+.sc_technologie .bottom_area .desc img { width: 100%; border-radius: 100%; }
+
+.sc_designs { padding: 130px 150px; position: relative; color: #000; overflow: hidden; }
+
+.sc_designs .bg { position: absolute; left: 0; top: 0; height: 100%; width: 100%; -o-object-fit: cover; object-fit: cover; }
+
+.sc_designs .top_area { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; border-top: 1px solid #000; padding-top: 130px; }
+
+.sc_designs .top_area .title { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; font-family: "Poppins", "noto", sans-serif; }
+
+.sc_designs .top_area .dsec { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; color: #0d0d0d; }
+
+.sc_designs .txt_area { position: relative; margin-top: 1220px; color: #fff; }
+
+.sc_designs .txt_area h3 { font-size: var(--font-h1); font-family: "Poppins", "noto", sans-serif; margin-bottom: 100px; position: relative; z-index: 1; }
+
+.sc_designs .bottom_area { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; color: #fff; }
+
+.sc_designs .bottom_area .link { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; display: block; font-family: "Poppins", "noto", sans-serif; }
+
+.sc_designs .bottom_area .link .circle { width: 50px; height: 50px; border-radius: 50%; border: 2px solid #fff; display: inline-block; position: relative; vertical-align: middle; }
+
+.sc_designs .bottom_area .link .circle::after { content: ""; display: block; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: 50% 50% no-repeat; background-image: url(../images/more_arrow.svg); background-size: 20px; -webkit-transition: -webkit-transform .3s .2s; transition: -webkit-transform .3s .2s; transition: transform .3s .2s; transition: transform .3s .2s, -webkit-transform .3s .2s; -webkit-transform: translateX(0); transform: translateX(0); }
+
+.sc_designs .bottom_area .link .txt { margin-left: 20px; display: inline-block; }
+
+.sc_designs .bottom_area .dsec { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
+
+.sc_board { display: -webkit-box; display: -ms-flexbox; display: flex; color: #fff; }
+
+.sc_board .property { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; position: relative; display: inline-block; height: 387px; overflow: hidden; }
+
+.sc_board .property img { width: 100%; position: absolute; height: 127%; -o-object-fit: cover; object-fit: cover; -webkit-transform: scale(1.05); transform: scale(1.05); -webkit-transition: .4s; transition: .4s; }
+
+.sc_board .property:hover img { -webkit-transform: scale(1); transform: scale(1); }
+
+.sc_board .weare { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; position: relative; display: inline-block; height: 100%; height: 387px; overflow: hidden; }
+
+.sc_board .weare img { width: 100%; position: absolute; height: 127%; -o-object-fit: cover; object-fit: cover; -webkit-transform: scale(1.05); transform: scale(1.05); -webkit-transition: .4s; transition: .4s; }
+
+.sc_board .weare:hover img { -webkit-transform: scale(1); transform: scale(1); }
+
+.sc_board h3 { position: absolute; font-family: "Poppins", "noto", sans-serif; margin: 15px 0 0 30px; }
+
+.sc_board strong { position: absolute; font-family: "Poppins", "noto", sans-serif; font-size: 64.8px; text-align: center; display: block; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }

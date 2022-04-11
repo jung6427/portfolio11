@@ -1,0 +1,233 @@
+@import './_var.scss'; /* sass에서 쓰는 변수 */
+:root {
+    // 브라우저의 기본셋팅 시스템에서 쓰는 변수
+    --font-h1:7vw;
+}
+// .sc_visual
+.sc_visual {
+    color: #fff; box-sizing: border-box; 
+    height: 100vh;  overflow: hidden; position: relative; display: flex;
+    flex-direction: column; justify-content: center;
+    .bg {width: 100%; height: 120%; object-fit: cover; 
+        position: absolute; z-index: -1; top: 0; left: 0;
+    }
+    .top_area {padding: 0 5vw; /* 폰트에만 한정된게 아니고 다 쓸수 있음 */
+        em {display: block; font-family: $font-en; }
+        h2 {font-size: var(--font-h1); line-height: 1;
+            font-family: $font-en; 
+            font-weight: 300;
+        }
+    }
+    .bottom_area {display: flex; justify-content: space-between;
+         padding: 0 5vw; padding: 50px 5vw 0;
+        .left {
+            p {font-size: 28px; display: block; margin-bottom: 38.4px;
+                line-height: 1.4;
+            }
+            .link_more{display: block; font-family: $font-en; 
+                .circle {width: 50px; height: 50px;
+                    border-radius: 50%; border: 2px solid #fff;
+                    display: inline-block; position: relative; vertical-align: middle;
+                    &::after {content: ""; display: block; position: absolute;
+                        left: 0; top: 0; width: 100%; height: 100%;
+                        background: 50% 50% no-repeat;
+                        background-image: url(../images/more_arrow.svg);
+                        background-size: 20px; transition: transform .3s .2s;
+                        transform: translateX(0);
+                    }
+                }
+                .txt {margin-left: 20px; display: inline-block;}
+            }
+        }
+        .right {display: flex;
+            .bld-slider-container-line {height: 100%; width: 1px; background: #fff;
+                margin-right: 19.2px; display: inline-block;
+            }
+            .swiper {width: 286px;
+                height: 189px;
+                .swiper-wrapper {position: relative;
+                    .swiper-slide {
+                        img {width: 120%; text-align: center;}
+                        .txt_area {position: absolute; bottom: 1.5rem; 
+                            left: 1.5rem; font-weight: 500;
+                            font-family: $font-en;
+                        }
+                    }
+                }
+                .swiper-pagination-bullet {background: #fff;opacity: 1;width: 0.375rem;
+                    height: 0.375rem; margin-right: 0.5625rem;transition: .3s;
+                }
+                .swiper-pagination-bullet-active {background: #fff;width: 0.625rem;
+                   height: 0.625rem;
+                }
+            }  
+            .projects {width: 185px; display: inline-block;
+                 height: 187px; margin-left: 1rem; border: 1px solid #fff;
+                 text-align: center; line-height: 169px;
+                 font-family: $font-en;
+                a {display: inline-block; width: 100%; height: 100%;
+                    font-size: 19.2px; font-weight: 700;
+                    .arrow {background: url(../images/more_arrow.svg) no-repeat;
+                        display: inline-block; width: 31px; height: 31px;
+                        vertical-align: middle; margin-top: 8px;
+                    }
+                }
+            }  
+        }
+    }   
+}
+// .sc_Projekt
+.sc_Projekt { line-height: 1.4; padding: 130px 150px;
+    box-sizing: border-box; position: relative; color: #fff;
+    background: #161516; overflow: hidden;
+    .bg {position: absolute; left: -40%; bottom: 0; }
+    .top_area {display: flex; margin-bottom: 100px; 
+        position: relative; z-index: 1;
+        h2 {font-family: $font-en;}
+        .title {flex: 1;} /* grow 대신 */
+        .desc {flex: 1;
+            
+        }
+    }
+    h3 {
+        font-size: var(--font-h1);
+        font-family: $font-en;
+        margin-bottom: 100px; position: relative; z-index: 1;
+    }
+    .bottom_area {display: flex; position: relative; z-index: 1;
+        .link {flex: 1; display: block; font-family: $font-en;
+            .circle {width: 50px; height: 50px;
+                border-radius: 50%; border: 2px solid #fff;
+                display: inline-block; position: relative; vertical-align: middle;
+                &::after {content: ""; display: block; position: absolute;
+                    left: 0; top: 0; width: 100%; height: 100%;
+                    background: 50% 50% no-repeat;
+                    background-image: url(../images/more_arrow.svg);
+                    background-size: 20px; transition: transform .3s .2s;
+                    transform: translateX(0);
+                }
+            }
+            .txt {margin-left: 20px; display: inline-block;}
+        // &::before {content: ""; display: block; position: absolute;
+        //     left: 0; top: 0; width: 100%; height: 100%; background: 50% 50% no-repeat;
+        //     background-image: url(../images/more_arrow1.svg);
+        //     background-size: contain;transition: transform .3s .2s;
+        //     transform: translateX(0);
+        // }
+        }
+        .list {flex: 1;
+            ul {display: flex; flex-wrap: wrap; margin-left: 20px;
+                li {width: 50%;
+                    &:nth-child(2n) {margin-bottom: 50px;}
+                    span {color: #ece7e4; display: block; margin-bottom: 20px;}
+                }
+            }
+        }
+    }
+}  // .sc_Projekt
+// .sc_Technologie
+.sc_technologie {padding: 130px 150px; box-sizing: border-box;
+    .top_area {border-top: 1px solid #000;
+        padding: 100px 0 96px 0;display: flex; 
+        .title {flex: 1; font-family: $font-en;
+            p {font-size: 28.8px; }
+        }
+        .dsec { flex: 1;}
+    }
+    .bottom_area {margin: 0; box-sizing: border-box;
+        display: flex; align-items: center;
+        .title {flex: 1 0 50%;
+            .txt_area { margin-bottom: 96px; 
+                strong {font-size: var(--font-h1);
+                    font-family: $font-en;
+                    font-weight: 500;
+                    line-height: 1;
+                }
+            }
+            .link {display: block; font-family: $font-en;
+                .circle {width: 50px; height: 50px;
+                    border-radius: 50%; border: 2px solid #000;
+                    display: inline-block; position: relative; vertical-align: middle;
+                    &::after {content: ""; display: block; position: absolute;
+                        left: 0; top: 0; width: 100%; height: 100%;
+                        background: 50% 50% no-repeat;
+                        background-image: url(../images/black_arrow.svg);
+                        background-size: 20px; transition: transform .3s .2s;
+                        transform: translateX(0);
+                    }
+                }
+                .txt {margin-left: 20px; display: inline-block;}
+            // &::before {content: ""; display: block; position: absolute;
+            //     left: 0; top: 0; width: 100%; height: 100%; background: 50% 50% no-repeat;
+            //     background-image: url(../images/more_arrow1.svg);
+            //     background-size: contain;transition: transform .3s .2s;
+            //     transform: translateX(0);
+            // }
+            }
+        }
+        .desc {flex: 1 0 50%;
+            img {width: 100%; border-radius: 100%;}
+        }
+    }  
+} // .sc_Technologie
+// .sc_designs
+.sc_designs {padding: 130px 150px; position: relative; 
+    color: #000; overflow: hidden;
+    .bg {position: absolute; left: 0; top: 0; height: 100%; 
+        width: 100%; object-fit: cover;
+    }
+    .top_area {position: relative; display: flex; 
+        border-top: 1px solid #000; padding-top: 130px;
+        .title {flex: 1; font-family: $font-en;}
+        .dsec {flex: 1; color: #0d0d0d;}
+    }
+    .txt_area {position: relative; margin-top: 1220px; color: #fff;
+        h3 {font-size: var(--font-h1); font-family: "Poppins", "noto", sans-serif;
+            margin-bottom: 100px; position: relative; z-index: 1;
+        }
+    }
+    .bottom_area {position: relative; display: flex; color: #fff;
+        .link {flex: 1; display: block; font-family: $font-en;
+            .circle {width: 50px; height: 50px;
+                border-radius: 50%; border: 2px solid #fff;
+                display: inline-block; position: relative; vertical-align: middle;
+                &::after {content: ""; display: block; position: absolute;
+                    left: 0; top: 0; width: 100%; height: 100%;
+                    background: 50% 50% no-repeat;
+                    background-image: url(../images/more_arrow.svg);
+                    background-size: 20px; transition: transform .3s .2s;
+                    transform: translateX(0);
+                }
+            }
+            .txt {margin-left: 20px; display: inline-block;}
+        }
+        .dsec {flex: 1;}
+    }
+}// .sc_designs
+
+// sc_board
+.sc_board {display: flex; color: #fff;
+    .property {flex: 1; position: relative; display: inline-block;
+            height: 387px; overflow: hidden;
+        img {width: 100%; position: absolute; height: 127%;
+            object-fit: cover; transform: scale(1.05); 
+            transition: .4s;
+        }
+        &:hover img{transform: scale(1);} 
+    }
+    .weare {flex: 1; position: relative; display: inline-block;
+        height: 100%; height: 387px; overflow: hidden;
+        img {width: 100%; position: absolute; height: 127%;
+            object-fit: cover; transform: scale(1.05); 
+            transition: .4s; 
+        }
+        &:hover img{transform: scale(1);} 
+    }
+    h3 {position: absolute; font-family: $font-en;
+        margin: 15px 0 0 30px;
+    }
+    strong {position: absolute; font-family: $font-en;
+        font-size: 64.8px; text-align: center; display: block;
+        top: 50%; left: 50%; transform: translate(-50%, -50%);
+    }
+}
