@@ -140,7 +140,11 @@ header .logo_area .logo {width: 111px; height: 60px;
 header .logo_area .logo a {width: 100%; height: 100%; display: inline-block;}
 header.on .logo_area .logo {background: url(../images/logo_black_on.svg) no-repeat; z-index: 5;}
 
-header .logo_area.fixed {position: fixed;  top: 0; z-index: 10; background-color: rgba(255,255,255,0.9); border-bottom: 1px solid #dedede; transition: .3s ease-in-out;}
+header .logo_area.fixed {position: fixed;  top: 0; z-index: 10; 
+  background-color: rgba(255,255,255,0.9); 
+  border-bottom: 1px solid #dedede; transition: .3s ease-in-out;
+  min-width: 1300px;
+}
 header .logo_area.fixed .menu_area > ul > li > a {color: #2d2f43; }
 header .logo_area.fixed path {fill: #2d2f43;}
 header .logo_area.fixed .logo { width: 50px;  background: url(../images/logo.svg) no-repeat; background-position: right;}

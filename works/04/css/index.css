@@ -20,8 +20,8 @@
 .sc_visual .swiper-pagination {bottom: 0px; width: 400px;  left: 40%;}
 .sc_visual .swiper-pagination-bullet {background: #a9a9b3; opacity: 1; width: 10px; height: 10px;}
 .sc_visual .swiper-pagination-bullet-active {border: 1px solid #292d49; background: #fff;}
-/* h2 공통 */
-h2 {font-size: 40px; color: #2d2f43; font-weight: 700; margin: 0 auto; text-align: center;}
+/* h2 공통 */ 
+h2 {font-size: 40px; color: #2d2f43; font-weight: 700; margin: 0 auto; text-align: center; }
 /* sc_iiems */
 .sc_items {padding-top: 55px; position: relative; }
 .sc_items .inner1220 {position: relative;}
@@ -217,7 +217,10 @@ h2 {font-size: 40px; color: #2d2f43; font-weight: 700; margin: 0 auto; text-alig
 .sc_album .swiper-slide-active .txt_area_album span {opacity: 1;}
 .sc_album .swiper-slide-active .txt_area_album strong {opacity: 1;}
 
-.sc_album .swiper-pagination-horizontal .swiper-pagination-bullet {margin: 0; width: 140px; height: 2px; display: inline-block; border-radius: 0; vertical-align: middle; }
+.sc_album .swiper-pagination-horizontal .swiper-pagination-bullet {
+    margin: 0; width: calc(90% / 10); height: 2px; display: inline-block; 
+    border-radius: 0; vertical-align: middle;
+}
 .sc_album .swiper-pagination-bullet-active {background: #333;}
 
 
