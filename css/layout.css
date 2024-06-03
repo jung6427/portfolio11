@@ -9,7 +9,9 @@ body { font-family: "Noto Sans KR", sans-serif; font-size: 16px; letter-spacing:
 
 body.hidden { overflow: hidden; }
 
-.bg { background: url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/78f237126434771.61354b7c14aa8.jpg) center/cover no-repeat; position: fixed; top: 0; left: 0; width: 100%; height: 200%; z-index: -1; -webkit-transition: background 3s; transition: background 3s; }
+/* .bg { background: url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/78f237126434771.61354b7c14aa8.jpg) center/cover no-repeat; position: fixed; top: 0; left: 0; width: 100%; height: 200%; z-index: -1; -webkit-transition: background 3s; transition: background 3s; } */
+
+.bg {background: url(/images/CK_cm28011747.jpg) center/cover no-repeat;  position: fixed; top: 0; left: 0; width: 100%; height: 200%; z-index: -1; -webkit-transition: background 3s; transition: background 3s; }
 
 @media (max-width: 1024px) { .bg { background: url(https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/308680126434771.613579091b48e.jpg) center/cover no-repeat; } }
 
